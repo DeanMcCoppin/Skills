@@ -10,7 +10,7 @@ This repo is Dean's personal Claude Code plugin marketplace, `dean-skills`. Each
 | Media generation | `plugins/media-generation` | AI image and video generation tools, setup, model choice, prompting |
 | SEO | `plugins/seo` | keyword and competitor research, site audits, rank tracking, local SEO, AI visibility |
 | Knowledge | `plugins/knowledge` | AI knowledge bases, RAG, document Q&A, site chatbots, MCP access to docs |
-| Productivity | `plugins/productivity` | tools for Dean's own workflow: dictation, meeting notes, daily tools |
+| Productivity | `plugins/productivity` | tools for Dean's own workflow: dictation, meeting notes, project management, daily tools |
 
 Each skill lives at `plugins/<plugin>/skills/<skill-name>/SKILL.md`, with `SOURCE.md` and any supporting files (scripts, references, assets) in the same folder.
 
