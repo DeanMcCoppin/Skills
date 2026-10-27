@@ -12,7 +12,7 @@ This repo is Dean's personal Claude Code plugin marketplace, `dean-skills`. Each
 | Knowledge | `plugins/knowledge` | AI knowledge bases, RAG, document Q&A, site chatbots, MCP access to docs |
 | Productivity | `plugins/productivity` | tools for Dean's own workflow: dictation, meeting notes, project management, scheduling, daily tools |
 | Customer support | `plugins/customer-support` | live chat widgets, support inboxes, help centers, helpdesk tools |
-| Local AI | `plugins/local-ai` | running AI models locally: Ollama, local LLMs and embeddings, local APIs |
+| Local AI | `plugins/local-ai` | running AI on your own (or rented) hardware: Ollama, local LLMs and embeddings, local APIs, local training experiments |
 | Automation | `plugins/automation` | workflow automation and integrations: n8n, webhooks, scheduled jobs |
 
 Each skill lives at `plugins/<plugin>/skills/<skill-name>/SKILL.md`, with `SOURCE.md` and any supporting files (scripts, references, assets) in the same folder.
