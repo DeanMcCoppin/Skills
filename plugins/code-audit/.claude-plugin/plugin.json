@@ -1,7 +1,7 @@
 {
   "name": "code-audit",
   "displayName": "Code Audit",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Skills for code review, security, performance, accessibility, dead code, and dependency checks.",
   "author": {
     "name": "DeanMcCoppin",
@@ -15,6 +15,8 @@
     "accessibility",
     "dependencies",
     "reverse-engineering",
-    "rea"
+    "rea",
+    "coding-practices",
+    "karpathy"
   ]
 }

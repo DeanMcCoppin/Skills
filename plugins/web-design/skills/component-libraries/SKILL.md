@@ -1,9 +1,9 @@
 ---
 name: component-libraries
-description: "Pick and install ready-made animated React components from shadcn-compatible libraries - Cult UI (154 free MIT components with personality), Watermelon UI (large MIT catalogue of components, blocks, dashboards and templates, with MCP), Skiper UI (uncommon showpiece components, free + premium) and Bencho (micro-interactions) - then fit them to the project. Use when Dean wants a fancier button, card, hero, text effect, nav, dock, dashboard block or other component than plain shadcn, asks which component library to use, or mentions Cult UI, Watermelon, Skiper or similar registries."
+description: "Pick and install ready-made animated React components from shadcn-compatible libraries - Cult UI and Watermelon UI (free MIT, broad), Componentry (free MIT effects, text animations, hero backgrounds), Aceternity UI (famous showpiece effects, free + Pro), Skiper UI (uncommon showpieces), Dotmatrix (dot-matrix loaders) and Bencho (micro-interactions) - then fit them to the project. Use when Dean wants a fancier button, card, hero, background, text effect, loader, nav, dock or dashboard block than plain shadcn, asks which component library to use, or mentions any of these libraries."
 metadata:
   pricing: freemium
-  cost: "Cult UI and Watermelon UI free (MIT); Skiper UI free + Premium $129 one-time (license unstated); Bencho free + Pro €79/yr. Prices as of 2026-10-27."
+  cost: "Cult UI, Watermelon UI and Componentry free (MIT); Aceternity 100+ free + Pro $199 lifetime (own license); Dotmatrix free (proprietary license); Skiper free + Premium $129 (license unstated); Bencho free + Pro €79/yr. Prices as of 2026-10-27."
   tags: [shadcn, components, react, framer-motion, ui-library]
 ---
 
@@ -17,11 +17,14 @@ All of these install with the **shadcn CLI**, which copies the component source 
 | --- | --- | --- | --- |
 | **[Cult UI](https://www.cult-ui.com)** | Animated components with personality (buttons, cards, inputs, text effects, docks), plus AI-SDK-style blocks | **MIT, free** (154 components) | `npx shadcn@latest add @cult-ui/<name>` |
 | **[Watermelon UI](https://ui.watermelon.sh)** | Breadth: a large catalogue of production-ready components, plus blocks, dashboards and templates (React 19, Tailwind v4, Motion) | **MIT, free** | `npx shadcn@latest add https://registry.watermelon.sh/r/<name>.json` |
+| **[Componentry](https://componentry.dev)** | About 53 effects: text animations, hero backgrounds, visual and ASCII effects, magnetic dock (Tailwind 4, Framer Motion) | **MIT, free** (by Harsh Jadhav) | `npx shadcn@latest add @componentry/<name>` |
+| **[Aceternity UI](https://ui.aceternity.com)** | The famous showpiece effects (MacBook scroll, spotlight, beams, 3D cards, parallax heroes) | **100+ free**; Pro $169/yr or **$199 lifetime** (200+ blocks, templates). Own license: unlimited client and commercial end products, **no redistributing components or selling templates**. Free MCP | Copy-paste or the shadcn command on each component page |
+| **[Dotmatrix](https://dotmatrix.zzzzshawn.cloud)** | Dot-matrix loading indicators (55+), one thing done well | **Free, proprietary license**: use in commercial products is fine; **don't publish its components in another component library or resell them** | `npx shadcn@latest add @dotmatrix/<name>` (e.g. `dotm-square-3`) |
 | **[Skiper UI](https://skiper-ui.com)** | Uncommon, showy one-off components for a signature moment (single file, no extra packages; Next.js + Motion) | Free + **Premium $129 one-time**. **License not published**, so check before client use (see below) | `npx shadcn add @skiper-ui/<name>` (for example `skiper40`) |
 | **Bencho** | Tactile micro-interactions and UI sounds | MIT free tier, Pro €79/yr | See the `bencho-blocks` skill (copied from its repo, not a registry) |
 | **Bklit** | Charts | MIT, free | See the `bklit-charts` skill |
 
-Default order for Dean: **plain shadcn/Radix for structure → Cult or Watermelon for personality → Skiper or Bencho for one signature moment per page.**
+Default order for Dean: **plain shadcn/Radix for structure → Cult, Watermelon or Componentry for personality → one signature moment per page from Aceternity, Skiper or Bencho.** Loaders: Dotmatrix. Aceternity's effects are everywhere ("the internet's most-stolen UI library"), so restyle them, or they'll read as template.
 
 If an older shadcn CLI can't resolve a namespace, add it to `components.json` `registries`, e.g. `"@cult-ui": "https://www.cult-ui.com/r/{name}.json"`.
 
@@ -29,13 +32,14 @@ If an older shadcn CLI can't resolve a namespace, add it to `components.json` `r
 
 They let Claude search the catalogues and get install commands directly:
 - Watermelon (hosted, no API key): `claude mcp add --transport http watermelon https://mcp.watermelon.sh/mcp`
+- Aceternity UI: MCP access is included on the free plan; see ui.aceternity.com for the setup.
 - Cult UI: see cult-ui.com/docs/mcp-server.
 
 Add them per project, only when doing heavy UI work.
 
 ## Before adding a component
 
-1. **Check the license and tier.** Free MIT components are fine anywhere. Premium or paid items stay in Dean's own projects and are never committed to public repos or to this skills repo. **Skiper UI:** its site doesn't publish a license, and a third-party listing claims free components require attribution. Until confirmed, ask Dean before using Skiper components in client work, or credit Skiper UI in the project.
+1. **Check the license and tier.** Free MIT components are fine anywhere. **Aceternity** and **Dotmatrix** use custom licenses: fine inside Dean's and clients' sites and apps, but never package their components into a reusable library, starter kit or template for others (including a public `components/` repo meant for reuse). Premium or paid items stay in Dean's own projects and are never committed to public repos or to this skills repo. **Skiper UI:** its site doesn't publish a license, and a third-party listing claims free components require attribution. Until confirmed, ask Dean before using Skiper components in client work, or credit Skiper UI in the project.
 2. **Read the code it installs.** Look at new dependencies, network calls (there should be none), `"use client"`, and size.
 3. **Fit it to the project:**
    - Map hard-coded colors, radii and shadows to the project's tokens (`dean-design-taste`), and drop any default purple gradients.
