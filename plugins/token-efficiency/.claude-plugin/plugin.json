@@ -1,7 +1,7 @@
 {
   "name": "token-efficiency",
   "displayName": "Token Efficiency",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Skills for context management, concise output, compaction, and cheaper workflows.",
   "author": {
     "name": "DeanMcCoppin",

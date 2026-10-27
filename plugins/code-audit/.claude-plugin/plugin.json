@@ -1,7 +1,7 @@
 {
   "name": "code-audit",
   "displayName": "Code Audit",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Skills for code review, security, performance, accessibility, dead code, and dependency checks.",
   "author": {
     "name": "DeanMcCoppin",
