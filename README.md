@@ -84,6 +84,7 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`cli-anything`](plugins/automation/skills/cli-anything/SKILL.md) | automation | 🟢 Free | Letting Claude drive desktop apps (Blender, GIMP, Inkscape, LibreOffice, Obsidian…) via agent CLIs | Useful; community CLIs are third-party code, so install one at a time, reviewed and pinned. Apache-2.0 | `automation` `cli` `desktop-apps` `agent-tools` `blender` |
 | [`workflow-frameworks`](plugins/agent-workflows/skills/workflow-frameworks/SKILL.md) | agent-workflows | 🟢 Free | Bigger builds with a spec → plan → build → verify loop: Matt Pocock's skills, Addy Osmani's agent-skills, Superpowers or GSD | One per project. Default: Matt Pocock's (no hooks, `/grill-me`). Superpowers has an always-on override skill; GSD (moved to open-gsd/gsd-core) ~30 hooks. All MIT | `workflows` `planning` `spec-driven` `tdd` `subagents` |
 | [`anthropic-skills`](plugins/agent-workflows/skills/anthropic-skills/SKILL.md) | agent-workflows | 🟢 Free | Which official Anthropic skills to install: Office/PDF documents, skill-creator, mcp-builder… | Install document-skills where projects make files, skill-creator for this repo; the rest mostly overlaps. Doc skills proprietary (use, don't copy) | `anthropic` `official` `documents` `skill-creator` `mcp` |
+| [`skill-discovery`](plugins/agent-workflows/skills/skill-discovery/SKILL.md) | agent-workflows | 🟢 Free | "Is there a skill for X?" or "what should this project have?": claude-code-setup recommender, `npx skills find`, official marketplace | Search, then import via add-skill. Never `npx skills add -g -y` (Vercel's find-skills says to). Disable CLI telemetry | `skills` `discovery` `plugins` `mcp` `setup` |
 | [`claude-mem`](plugins/agent-workflows/skills/claude-mem/SKILL.md) | agent-workflows | 🟡 Freemium | Memory across many sessions in a long project | Useful, but install with `--provider claude` and telemetry off (hosted and PostHog by default). Try CLAUDE.md + notes first. Apache-2.0 | `memory` `context` `sessions` `mcp` `claude-code` |
 
 ```
@@ -198,7 +199,8 @@ Then review it, and ask Claude to commit and push.
 ## Where to find more
 
 - [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code): a curated directory of skills, plugins, hooks and workflows. It's CC BY-NC-ND, so it's linked, not copied: browse it, then add individual items here with the add-skill flow (each item's own license applies).
-- Anthropic's official marketplace (`claude-plugins-official`, built into Claude Code): `/plugin` to browse.
+- Anthropic's official marketplace (`claude-plugins-official`, built into Claude Code): `/plugin` to browse. Its `claude-code-setup` plugin recommends automations per project.
+- [skills.sh](https://skills.sh) / `npx skills find`: Vercel's search over the open skills ecosystem. See the `skill-discovery` skill.
 - Not imported whole: Everything Claude Code (ECC, affaan-m/everything-claude-code). Its best skills were cherry-picked into this repo; installing it whole adds global hooks.
 
 ## Validate
