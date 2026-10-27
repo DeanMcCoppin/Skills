@@ -1,7 +1,7 @@
 {
   "name": "knowledge",
   "displayName": "Knowledge",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Skills for AI knowledge bases: RAG, document Q&A, knowledge graphs, site chatbots, and connecting knowledge bases to Claude Code.",
   "author": {
     "name": "DeanMcCoppin",
