@@ -18,8 +18,9 @@ Skills/
 │   └── web-design/
 │       ├── .claude-plugin/plugin.json
 │       └── skills/<skill-name>/SKILL.md (+ SOURCE.md, scripts, references)
+├── .claude/skills/add-skill/           # the /add-skill flow: review, categorize, place
 ├── templates/project-settings.json     # drop-in for a project's .claude/settings.json
-└── CLAUDE.md                           # tells Claude how to sort the inbox
+└── CLAUDE.md                           # points Claude at the add-skill flow
 ```
 
 ## Install (terminal, Desktop app, IDE)
@@ -73,18 +74,24 @@ The current docs say cloud sessions **don't install plugins or marketplaces decl
    cp -r ~/src/Skills/plugins/web-design/skills/* .claude/skills/
    ```
 
-## Adding skills: the inbox workflow
+## Adding skills
 
-1. Drop anything into `inbox/`: a skill folder, a lone `SKILL.md`, a `.md`/`.txt` of pasted text, or a file listing GitHub URLs (you can also paste URLs in the chat).
-2. Open this repo in Claude Code and say **"sort the inbox"**.
-3. Claude follows `CLAUDE.md`:
-   - reads every item fully and flags anything sketchy (phoning home, `curl | sh`, "ignore other rules", credential handling)
-   - files each skill under the right plugin, or tells you it fits none
-   - spots duplicates and proposes merging them into one stronger skill
-   - normalizes names and frontmatter, rewrites descriptions to say *when* to trigger
-   - writes `SOURCE.md` (URL, author, license) and skips anything without a permissive license
-   - empties the inbox, validates, and gives you a summary of what went where
-4. Review, then commit and push.
+Open this repo in Claude Code (terminal or cloud) and either:
+
+- **Add one now**: "add this skill: <GitHub URL>", paste the skill text, or run `/add-skill <url or path>`.
+- **Batch it**: drop folders, `SKILL.md` files, pasted text or a list of URLs into `inbox/`, then say **"sort the inbox"**.
+
+Both run the same flow, defined in [`.claude/skills/add-skill/`](.claude/skills/add-skill/SKILL.md):
+
+1. **Intake**: copies the skill into a quarantine folder outside the repo. Nothing from it is ever executed.
+2. **Review**: Claude reads every file and reviews it against the [checklist](.claude/skills/add-skill/review-checklist.md): phoning home, `curl | sh`, rule overrides, credential access, hidden or encoded content. Flagged skills stop and wait for you.
+3. **License**: skips anything that isn't permissively licensed.
+4. **Filter**: picks a category by the skill's primary purpose ([categories.md](.claude/skills/add-skill/categories.md)). If it fits none, Claude asks and can create a new category plugin.
+5. **Dedupe**: compares it with every existing skill and proposes one merged skill instead of two.
+6. **Place**: kebab-case folder, clean frontmatter, a description that says *when* to trigger, `SOURCE.md` (URL, author, license, changes), supporting files alongside.
+7. **Finish**: bumps the plugin version, runs `claude plugin validate`, and reports what was added, merged, rejected, and what needs your decision.
+
+Then review it, and ask Claude to commit and push.
 
 ## Validate
 
