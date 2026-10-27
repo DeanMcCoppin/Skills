@@ -1,12 +1,12 @@
 {
   "name": "productivity",
   "displayName": "Productivity",
-  "version": "0.3.0",
-  "description": "Skills for tools that speed up Dean's own workflow: voice dictation into Claude Code and other apps, meeting notes, project management, scheduling, and similar daily tools.",
+  "version": "0.4.0",
+  "description": "Skills for tools that speed up Dean's own workflow: voice dictation into Claude Code and other apps, meeting notes, project management, scheduling, screen recording, and similar daily tools.",
   "author": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
   },
   "repository": "https://github.com/DeanMcCoppin/Skills",
-  "keywords": ["dictation", "speech-to-text", "meeting-notes", "workflow", "openwhispr", "project-management", "openproject", "scheduling", "cal-com"]
+  "keywords": ["dictation", "speech-to-text", "meeting-notes", "workflow", "openwhispr", "project-management", "openproject", "scheduling", "cal-com", "screen-recording", "cap"]
 }

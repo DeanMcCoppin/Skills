@@ -10,7 +10,8 @@ My personal Claude Code skills, packaged as a plugin marketplace called **`dean-
 | `media-generation` | AI image, video and voice generation (Open Higgsfield, VoiceStudio, model choice, prompting) |
 | `seo` | Keyword and competitor research, site audits, rank tracking, local SEO, AI visibility (OpenSEO) |
 | `knowledge` | AI knowledge bases: RAG Q&A over documents, site chatbots, MCP access to docs (WeKnora) |
-| `productivity` | Tools for your own workflow: voice dictation, meeting notes, project management (OpenWhispr, OpenProject, Cal.com) |
+| `productivity` | Tools for your own workflow: voice dictation, meeting notes, project management, scheduling, screen recording (OpenWhispr, OpenProject, Cal.com, Cap) |
+| `customer-support` | Live chat widgets, shared support inboxes, help centers for your and client sites (Chatwoot) |
 
 ## Skills catalog
 
@@ -28,6 +29,8 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`openwhispr`](plugins/productivity/skills/openwhispr/SKILL.md) | productivity | Hotkey voice dictation (including prompts into Claude Code), meeting transcription, notes | Real free Wispr Flow replacement with local models; Pro ($80/yr) only for cloud and sync. MIT |
 | [`openproject`](plugins/productivity/skills/openproject/SKILL.md) | productivity | Self-hosted project management (Gantt, boards, time tracking) for team or client projects; Claude creates and updates tasks via REST API | Mature and free (GPL), but heavy and Jira-like; overkill solo, so use GitHub Projects then. MCP is Enterprise-only |
 | [`cal-com`](plugins/productivity/skills/cal-com/SKILL.md) | productivity | Booking pages, "book a call" on your or client sites (React embed), Calendly replacement | Excellent. Cloud free plan covers a solo user; self-hosted cal.diy is a stripped, non-production fork |
+| [`cap`](plugins/productivity/skills/cap/SKILL.md) | productivity | Screen recordings: instant share links, polished Studio demos, client walkthroughs | Great Loom replacement, but the free plan is personal-only; client work needs the $58 one-time license. AGPL |
+| [`chatwoot`](plugins/customer-support/skills/chatwoot/SKILL.md) | customer-support | Live chat on your or client sites, shared inbox (email, WhatsApp, social), help center | Mature free self-hosted Intercom replacement; AI and branding are paid. MIT core, commercial `enterprise/` |
 
 ```
 Skills/
@@ -40,7 +43,8 @@ Skills/
 │   ├── media-generation/
 │   ├── seo/
 │   ├── knowledge/
-│   └── productivity/
+│   ├── productivity/
+│   └── customer-support/
 │       ├── .claude-plugin/plugin.json
 │       └── skills/<skill-name>/SKILL.md (+ SOURCE.md, scripts, references)
 ├── .claude/skills/add-skill/           # the /add-skill flow: review, categorize, place
@@ -61,6 +65,7 @@ Inside a Claude Code session:
 /plugin install seo@dean-skills
 /plugin install knowledge@dean-skills
 /plugin install productivity@dean-skills
+/plugin install customer-support@dean-skills
 ```
 
 Or from your shell:
@@ -90,7 +95,8 @@ Copy `templates/project-settings.json` into the project's `.claude/settings.json
     "media-generation@dean-skills": true,
     "seo@dean-skills": true,
     "knowledge@dean-skills": true,
-    "productivity@dean-skills": true
+    "productivity@dean-skills": true,
+    "customer-support@dean-skills": true
   }
 }
 ```
