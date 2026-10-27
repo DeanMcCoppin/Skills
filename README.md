@@ -8,6 +8,7 @@ My personal Claude Code skills, packaged as a plugin marketplace called **`dean-
 | `code-audit` | Reviews, security, performance, accessibility, dead code, dependency checks |
 | `web-design` | UI/UX, typography, layout, Tailwind, Framer Motion, maps, landing pages |
 | `media-generation` | AI image, video and voice generation (Open Higgsfield, VoiceStudio, model choice, prompting) |
+| `seo` | Keyword and competitor research, site audits, rank tracking, local SEO, AI visibility (OpenSEO) |
 
 ## Skills catalog
 
@@ -19,6 +20,7 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`editorial-themes`](plugins/web-design/skills/editorial-themes/SKILL.md) | web-design | Building a full premium "theme" site for a business (law, agency, architect, restaurant…) in a Lexington-like editorial style | Strong for marketing sites; overkill for app UIs |
 | [`open-higgsfield`](plugins/media-generation/skills/open-higgsfield/SKILL.md) | media-generation | Generating lifelike AI video or photos via the self-hosted Open Higgsfield studio | Same output as Higgsfield, pay-per-use; the official plan is likely cheaper for heavy use. Unlicensed, unofficial |
 | [`voicestudio`](plugins/media-generation/skills/voicestudio/SKILL.md) | media-generation | Voiceovers, narration, voice cloning/design, dubbing, transcripts and subtitles, run locally | Credible, free ElevenLabs replacement for most work; ElevenLabs still wins on top-tier voices. AGPL |
+| [`openseo`](plugins/seo/skills/openseo/SKILL.md) | seo | Keyword/competitor research, SEO audits, rank tracking via self-hosted OpenSEO + its MCP | Legit Semrush replacement at low volume; you still pay DataForSEO per request. MIT |
 
 ```
 Skills/
@@ -28,7 +30,8 @@ Skills/
 │   ├── token-efficiency/
 │   ├── code-audit/
 │   ├── web-design/
-│   └── media-generation/
+│   ├── media-generation/
+│   └── seo/
 │       ├── .claude-plugin/plugin.json
 │       └── skills/<skill-name>/SKILL.md (+ SOURCE.md, scripts, references)
 ├── .claude/skills/add-skill/           # the /add-skill flow: review, categorize, place
@@ -46,6 +49,7 @@ Inside a Claude Code session:
 /plugin install code-audit@dean-skills
 /plugin install token-efficiency@dean-skills
 /plugin install media-generation@dean-skills
+/plugin install seo@dean-skills
 ```
 
 Or from your shell:
@@ -72,7 +76,8 @@ Copy `templates/project-settings.json` into the project's `.claude/settings.json
     "token-efficiency@dean-skills": true,
     "code-audit@dean-skills": true,
     "web-design@dean-skills": true,
-    "media-generation@dean-skills": true
+    "media-generation@dean-skills": true,
+    "seo@dean-skills": true
   }
 }
 ```

@@ -8,6 +8,7 @@ This repo is Dean's personal Claude Code plugin marketplace, `dean-skills`. Each
 | Code auditing | `plugins/code-audit` | reviews, security, performance, accessibility, dead code, dependency checks |
 | Website design | `plugins/web-design` | UI/UX, typography, layout, Tailwind, Framer Motion, maps, landing pages |
 | Media generation | `plugins/media-generation` | AI image and video generation tools, setup, model choice, prompting |
+| SEO | `plugins/seo` | keyword and competitor research, site audits, rank tracking, local SEO, AI visibility |
 
 Each skill lives at `plugins/<plugin>/skills/<skill-name>/SKILL.md`, with `SOURCE.md` and any supporting files (scripts, references, assets) in the same folder.
 
