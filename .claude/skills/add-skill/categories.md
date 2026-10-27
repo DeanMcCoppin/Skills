@@ -10,6 +10,7 @@ Each category is one plugin in this marketplace, so Dean can enable categories s
 | Media generation | `plugins/media-generation` | Generating images, video or audio with AI models: generation tools and studios, model selection, prompting for realism, consistency across shots, exporting media for sites | Building the website that shows the media (→ website design) |
 | SEO | `plugins/seo` | Getting found in search: keyword and competitor research, SEO audits, backlinks, rank tracking, local SEO, AI-answer visibility, Search Console, SEO data tools | On-page code quality or performance audits (→ code auditing); visual page design (→ website design) |
 | Knowledge | `plugins/knowledge` | Making documents answerable: knowledge bases, RAG, document Q&A, knowledge graphs, wikis built from docs, docs chatbots and widgets, feeding docs to agents over MCP | Writing or editing the docs themselves; general context-saving tricks (→ token optimisation) |
+| Productivity | `plugins/productivity` | Speeding up Dean's own day-to-day work: dictation and voice input, meeting transcription and notes, launchers, clipboard and window tools, personal automation | Generating media (→ media generation); context or token savings (→ token optimisation); team knowledge bases (→ knowledge) |
 
 ## Choosing between two
 

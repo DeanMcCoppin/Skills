@@ -26,4 +26,5 @@
   - the official one-liner is `curl | sh` (the script itself looked careful)
   - usage analytics are opt-in (consent)
 - Alternatives: ElevenLabs (hosted, best quality, paid); OpenAI TTS API (cheap hosted, no cloning); other local TTS models run directly (more setup, no studio).
+- Overlap: openwhispr (productivity) is the better daily dictation tool; this skill focuses on voice output.
 - Review: re-read `scripts/install.sh` and the analytics settings on major updates.

@@ -38,6 +38,10 @@ The backend listens on `http://localhost:3900` by default (honor Dean's setting 
 - Export WAV masters and ship compressed files (AAC/MP3 at 128–192 kbps or Opus). Add captions (VTT) for accessibility.
 - Dubbing: keep the original media, review segment timing before export, and keep music and effects unless Dean says otherwise.
 
+## Not this tool
+
+- For everyday hotkey dictation (voice typing into Claude Code or any app), use **openwhispr** (productivity plugin). VoiceStudio is for generating audio.
+
 ## Don't
 
 - Don't clone a voice without the speaker's permission, and don't make audio that impersonates real people deceptively.

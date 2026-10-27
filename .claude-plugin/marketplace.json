@@ -1,6 +1,6 @@
 {
   "name": "dean-skills",
-  "description": "Dean's personal Claude Code skills, split into plugins you can enable per project: token efficiency, code audit, web design, media generation, SEO, and knowledge bases.",
+  "description": "Dean's personal Claude Code skills, split into plugins you can enable per project: token efficiency, code audit, web design, media generation, SEO, knowledge bases, and productivity.",
   "owner": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
@@ -41,6 +41,12 @@
       "source": "./plugins/knowledge",
       "description": "AI knowledge bases: RAG, document Q&A, knowledge graphs, site chatbots, and MCP access for Claude Code.",
       "category": "knowledge"
+    },
+    {
+      "name": "productivity",
+      "source": "./plugins/productivity",
+      "description": "Tools that speed up your own workflow: voice dictation into Claude Code and other apps, meeting notes.",
+      "category": "productivity"
     }
   ]
 }
