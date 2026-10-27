@@ -10,7 +10,7 @@ My personal Claude Code skills, packaged as a plugin marketplace called **`dean-
 | `media-generation` | AI image, video and voice generation (Open Higgsfield, VoiceStudio, model choice, prompting) |
 | `seo` | Keyword and competitor research, site audits, rank tracking, local SEO, AI visibility (OpenSEO) |
 | `knowledge` | AI knowledge bases: RAG Q&A over documents, site chatbots, MCP access to docs (WeKnora) |
-| `productivity` | Tools for your own workflow: voice dictation, meeting notes, project management (OpenWhispr, OpenProject) |
+| `productivity` | Tools for your own workflow: voice dictation, meeting notes, project management (OpenWhispr, OpenProject, Cal.com) |
 
 ## Skills catalog
 
@@ -27,6 +27,7 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`weknora`](plugins/knowledge/skills/weknora/SKILL.md) | knowledge | Q&A over a document set, "ask our docs" chatbots on client sites, client/project docs in Claude Code via MCP | Mature, free, self-hosted (Tencent, MIT). Bring your own models; heavy stack. Replaces Notion AI's Q&A, not Notion |
 | [`openwhispr`](plugins/productivity/skills/openwhispr/SKILL.md) | productivity | Hotkey voice dictation (including prompts into Claude Code), meeting transcription, notes | Real free Wispr Flow replacement with local models; Pro ($80/yr) only for cloud and sync. MIT |
 | [`openproject`](plugins/productivity/skills/openproject/SKILL.md) | productivity | Self-hosted project management (Gantt, boards, time tracking) for team or client projects; Claude creates and updates tasks via REST API | Mature and free (GPL), but heavy and Jira-like; overkill solo, so use GitHub Projects then. MCP is Enterprise-only |
+| [`cal-com`](plugins/productivity/skills/cal-com/SKILL.md) | productivity | Booking pages, "book a call" on your or client sites (React embed), Calendly replacement | Excellent. Cloud free plan covers a solo user; self-hosted cal.diy is a stripped, non-production fork |
 
 ```
 Skills/
