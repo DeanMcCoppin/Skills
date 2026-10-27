@@ -3,7 +3,7 @@
 - Tools:
   - https://github.com/Leonxlnx/taste-skill (Leonxlnx; MIT), added 2026-10-27
   - https://github.com/pbakaus/impeccable (Paul Bakaus; Apache-2.0)
-  - Frontend Design plugin, Anthropic (in the official `claude-plugins-official` marketplace; the claude-code repo is "All rights reserved", so nothing copied)
+  - Frontend Design, Anthropic: in the official `claude-plugins-official` marketplace (the claude-code repo copy is "All rights reserved") and in https://github.com/anthropics/skills as `skills/frontend-design` under **Apache-2.0** (corrected 2026-10-27). Not vendored either way; it's mostly redundant with dean-design-taste.
   - https://github.com/nextlevelbuilder/ui-ux-pro-max-skill (MIT)
   - https://github.com/kylezantos/design-motion-principles (Kyle Zantos; MIT)
 - This skill: Dean (original hub), written with Claude. Nothing vendored: each pack installs from its official source. License: TODO (this repo has no LICENSE file yet).

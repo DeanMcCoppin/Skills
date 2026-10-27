@@ -1,6 +1,6 @@
 ---
 name: karpathy-guidelines
-description: "Behavioral rules that prevent the classic LLM coding mistakes (from Andrej Karpathy's observations): state assumptions and ask instead of guessing, write the minimum code that solves the problem, make surgical diffs that touch only what the request needs, and turn tasks into verifiable goals (tests first). Use when writing, editing, reviewing or refactoring code, especially in existing codebases, when a change is growing beyond the request, or when a task is ambiguous."
+description: "Behavioral rules that prevent the classic LLM coding mistakes (from Andrej Karpathy's observations): state assumptions and ask instead of guessing, write the minimum code that solves the problem (reuse, platform features and existing dependencies before new code), make surgical diffs that touch only what the request needs, and turn tasks into verifiable goals (tests first). Use when writing, editing, reviewing or refactoring code, especially in existing codebases, when a change is growing beyond the request, or when a task is ambiguous."
 license: MIT
 metadata:
   pricing: free
@@ -33,6 +33,15 @@ Before implementing:
 - No "flexibility" or "configurability" that wasn't requested.
 - No error handling for impossible scenarios.
 - If you write 200 lines and it could be 50, rewrite it.
+
+Take the first option that fully works (from Ponytail):
+1. Does it need to exist? Skip what nobody asked for, and name it in one line.
+2. Already in this codebase (helper, component, pattern)? Use it the way the surrounding code does.
+3. Standard library or platform feature (a native `<input type="date">` before a date-picker library)?
+4. An installed dependency? Never add a dependency for a few lines.
+5. Otherwise, the minimum code that works.
+
+Be lazy about the solution, never about the change: finish every caller, test and fixture the change touches. Never cut validation at trust boundaries, error handling that prevents data loss, security, accessibility, or anything the user asked for. A shortcut with a known limit gets a comment: `shortcut: <the limit>, <when to upgrade>`.
 
 Ask yourself: "Would a senior engineer say this is overcomplicated?" If yes, simplify.
 
