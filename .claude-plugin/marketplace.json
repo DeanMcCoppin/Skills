@@ -1,6 +1,6 @@
 {
   "name": "dean-skills",
-  "description": "Dean's personal Claude Code skills, split into plugins you can enable per project: token efficiency, code audit, web design, media generation, SEO, knowledge bases, productivity, customer support, local AI, and automation.",
+  "description": "Dean's personal Claude Code skills, split into plugins you can enable per project: token efficiency, code audit, web design, media generation, SEO, knowledge bases, productivity, customer support, local AI, automation, and agent workflows.",
   "owner": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
@@ -126,6 +126,19 @@
         "workflows",
         "integrations",
         "n8n"
+      ]
+    },
+    {
+      "name": "agent-workflows",
+      "source": "./plugins/agent-workflows",
+      "description": "Claude Code workflow frameworks (Superpowers, GSD), memory across sessions, and choosing Claude Code add-ons safely.",
+      "category": "productivity",
+      "tags": [
+        "claude-code",
+        "workflows",
+        "planning",
+        "memory",
+        "free"
       ]
     }
   ]

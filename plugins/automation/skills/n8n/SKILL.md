@@ -1,10 +1,10 @@
 ---
 name: n8n
-description: "Build and self-host workflow automations with n8n (open-core Zapier/Make alternative, 400+ integrations, AI agent nodes, webhooks, cron) - form-to-CRM, notifications, content pipelines, AI enrichment, syncing tools - and have Claude design workflows as importable JSON. Use when Dean wants to automate a process, connect apps or a website form to other tools, replace Zapier or Make, set up webhooks or scheduled jobs, or mentions n8n."
+description: "Build and self-host workflow automations with n8n (open-core Zapier/Make alternative, 400+ integrations, AI agent nodes, webhooks, cron) - form-to-CRM, notifications, content pipelines, AI enrichment, syncing tools - and have Claude design, validate and deploy workflows (importable JSON or the n8n-MCP server, with production guardrails and its telemetry off). Use when Dean wants to automate a process, connect apps or a website form to other tools, replace Zapier or Make, set up webhooks or scheduled jobs, or mentions n8n or n8n-MCP."
 metadata:
   pricing: free-self-host
   cost: "Self-hosted Community edition free with unlimited executions (Sustainable Use License: internal business or personal use; Enterprise features paid). n8n Cloud is paid (check n8n.io/pricing)."
-  tags: [automation, workflows, integrations, webhooks, self-hosted]
+  tags: [automation, workflows, integrations, webhooks, self-hosted, mcp]
 ---
 
 # n8n
@@ -33,6 +33,15 @@ For anything real: Docker Compose with Postgres, a fixed `N8N_ENCRYPTION_KEY` (b
 - Typical site automations: a contact or booking form (webhook) → validate → CRM, email or Slack → reply. Cal.com booking → OpenProject task. Chatwoot conversation → AI summary → ticket. New blog post → social posts.
 - AI steps: n8n's AI Agent and LLM nodes work with Anthropic, OpenAI or local `ollama` models. Put limits on loops and tokens.
 - n8n can expose workflows as MCP tools (MCP Server Trigger) for Claude Code. Treat them as privileged actions: scope them narrowly and require auth.
+
+## n8n-MCP: Claude builds workflows directly
+
+[czlonkowski/n8n-mcp](https://github.com/czlonkowski/n8n-mcp) (MIT) gives Claude docs for every n8n node, templates and a validator, and (with `N8N_API_URL` + `N8N_API_KEY`) tools to create, update and test workflows on an instance.
+
+- **Telemetry is on by default and uploads sanitized workflow structures** (node types, names, connections, parameters with secret-looking fields redacted) plus the free-text change intent, to build ML datasets. Sanitizing is pattern-based. Turn it off before first use: `npx n8n-mcp telemetry disable`, or `N8N_MCP_TELEMETRY_DISABLED=true` for Docker or the MCP `env`.
+- Self-host it (npx pinned to a version, or Docker with a pinned tag) with `MCP_MODE=stdio`. The hosted dashboard.n8n-mcp.com (free 100 calls/day) sends everything through their server; don't use it for client workflows.
+- **Never point it at a production instance with write access.** Its own README says so. Use a dev/staging n8n, then export and import to production. For read-only use on prod, set `DISABLED_TOOLS` to the write tools (`n8n_create_workflow`, `n8n_update_full_workflow`, `n8n_update_partial_workflow`, `n8n_delete_workflow`, `n8n_autofix_workflow`, `n8n_deploy_template`, `n8n_test_workflow`, `n8n_manage_credentials`, `n8n_manage_datatable`) or use `DISABLED_TOOL_OPERATIONS`.
+- The n8n API key goes in the MCP `env` from a secret store, never in a committed `.mcp.json`. Docs-only mode (no API URL or key) is enough for designing JSON.
 
 ## Rules
 

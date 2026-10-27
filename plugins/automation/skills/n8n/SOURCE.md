@@ -22,3 +22,10 @@
   - self-hosting needs backups and the encryption key kept safe
   - workflows can sprawl, so document them
 - Alternatives: Zapier / Make (hosted, paid per task); Activepieces (MIT, simpler); Windmill (AGPL, code-first); plain cron + scripts
+
+## n8n-MCP (merged 2026-10-27)
+
+- Tool: https://github.com/czlonkowski/n8n-mcp (Romuald Członkowski / AiAdvisors; MIT). Reviewed at commit 09611fd: README, PRIVACY.md, docs/SELF_HOSTING.md.
+- Merged into this skill instead of a separate one (same job: building n8n workflows with Claude).
+- Flag raised: telemetry on by default (privacy policy v2, 2026-09-28) collects tool usage, sanitized workflow structures and the `intent` text "to build datasets and machine learning models"; the installation ID is derived from hostname, platform and home path. Opt-out: `npx n8n-mcp telemetry disable` / `N8N_MCP_TELEMETRY_DISABLED=true`. The skill makes opt-out mandatory.
+- Verdict: very useful (node docs plus validation stop Claude inventing parameters), but treat it as a dev-instance tool with telemetry off. Hosted dashboard is a free-tier SaaS (100 calls/day).

@@ -14,6 +14,7 @@ This repo is Dean's personal Claude Code plugin marketplace, `dean-skills`. Each
 | Customer support | `plugins/customer-support` | live chat widgets, support inboxes, help centers, helpdesk tools |
 | Local AI | `plugins/local-ai` | running AI on your own (or rented) hardware: Ollama, local LLMs and embeddings, local APIs, local training experiments |
 | Automation | `plugins/automation` | workflow automation and integrations: n8n, webhooks, scheduled jobs |
+| Agent workflows | `plugins/agent-workflows` | how Claude Code itself works: workflow frameworks (Superpowers, GSD), memory across sessions, choosing Claude Code add-ons |
 
 Each skill lives at `plugins/<plugin>/skills/<skill-name>/SKILL.md`, with `SOURCE.md` and any supporting files (scripts, references, assets) in the same folder.
 

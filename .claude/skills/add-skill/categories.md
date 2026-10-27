@@ -14,6 +14,7 @@ Each category is one plugin in this marketplace, so Dean can enable categories s
 | Customer support | `plugins/customer-support` | Talking to customers of Dean's or client sites: live chat widgets, shared support inboxes (email, WhatsApp, social), help centers and FAQs, helpdesk and ticketing | AI answers from documents (→ knowledge); scheduling (→ productivity) |
 | Local AI | `plugins/local-ai` | Running AI models on Dean's own hardware: model runtimes (Ollama, LM Studio, llama.cpp), local embeddings, local OpenAI/Anthropic-compatible APIs, using local models in other tools | Tools that merely *can* use a local model as an option (file them by their main job and link here) |
 | Automation | `plugins/automation` | Connecting apps and automating processes: n8n/Zapier/Make-style workflow tools, webhooks, scheduled jobs, form-to-CRM pipelines, AI workflow agents | One-off scripts for Dean's own desktop (→ productivity) |
+| Agent workflows | `plugins/agent-workflows` | How Claude Code itself works: workflow frameworks (brainstorm/spec/plan/execute), memory across sessions, session orchestration, choosing Claude Code plugins and add-ons | Skills about a domain (design, SEO, audits) even if they ship as Claude Code plugins (file by domain); context and token savings (→ token optimisation) |
 
 ## Choosing between two
 

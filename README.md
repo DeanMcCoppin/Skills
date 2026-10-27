@@ -9,11 +9,12 @@ My personal Claude Code skills, packaged as a plugin marketplace called **`dean-
 | `web-design` | UI/UX, typography, layout, Tailwind, Framer Motion, maps, landing pages |
 | `media-generation` | AI image, video and voice generation (Open Higgsfield, VoiceStudio, model choice, prompting) |
 | `seo` | SEO and analytics: keyword and competitor research, technical SEO, rank tracking, privacy-friendly analytics (OpenSEO, Plausible) |
-| `knowledge` | AI knowledge bases: RAG Q&A over documents, site chatbots, MCP access to docs (WeKnora) |
+| `knowledge` | AI knowledge bases: RAG Q&A over documents, site chatbots, MCP access to docs, current library docs (WeKnora, Context7) |
 | `productivity` | Tools for your own workflow: voice dictation, meeting notes, project management, scheduling, screen recording (OpenWhispr, OpenProject, Cal.com, Cap) |
 | `customer-support` | Live chat widgets, shared support inboxes, help centers for your and client sites (Chatwoot) |
 | `local-ai` | Run AI models on your own machine: local LLMs, embeddings and APIs (Ollama) |
-| `automation` | Workflow automation and integrations: n8n, webhooks, scheduled jobs |
+| `automation` | Workflow automation and integrations: n8n (+ n8n-MCP), webhooks, scheduled jobs |
+| `agent-workflows` | How Claude Code works: workflow frameworks (Superpowers vs GSD), memory across sessions (claude-mem) |
 
 ## Skills catalog
 
@@ -27,7 +28,8 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`strategic-compact`](plugins/token-efficiency/skills/strategic-compact/SKILL.md) | token-efficiency | 🟢 Free | Long sessions: when to `/compact` and what to save first; keeping baseline context small | Useful habits, no hooks (from ECC, stripped of its global hook) | `context` `compaction` `long-sessions` |
 | [`token-budget-advisor`](plugins/token-efficiency/skills/token-budget-advisor/SKILL.md) | token-efficiency | 🟢 Free | Only when you ask for a short, long or "50%" answer, or for token estimates | Handy on request; estimates are rough (TBA via ECC, MIT) | `tokens` `response-length` |
 | [`openspace`](plugins/token-efficiency/skills/openspace/SKILL.md) | token-efficiency | 🟠 Pay-per-use | Skill retrieval and evolution across a big library (local only) | Overlaps this repo; telemetry and traces if cloud is on; claims unverified. Try on a side project. MIT | `skills` `agents` `mcp` `skill-evolution` `retrieval` |
-| [`graphify`](plugins/token-efficiency/skills/graphify/SKILL.md) | token-efficiency | 🟢 Free | Big or unfamiliar codebases: query a local code knowledge graph instead of grepping and reading | Strong; code mapping is local. Install per project only (global install adds hooks everywhere). MIT/Apache |
+| [`graphify`](plugins/token-efficiency/skills/graphify/SKILL.md) | token-efficiency | 🟢 Free | Big or unfamiliar codebases: query a local code knowledge graph instead of grepping and reading | Strong; code mapping is local. Install per project only (global install adds hooks everywhere). MIT/Apache | `codebase-map` `knowledge-graph` `context` `tokens` `onboarding` |
+| [`repomix`](plugins/token-efficiency/skills/repomix/SKILL.md) | token-efficiency | 🟢 Free | Packing a repo into one file for a chat model without repo access; token counts per folder | Great utility; not a token saver inside Claude Code (use search or graphify there). Keep Secretlint on. MIT | `context` `codebase-snapshot` `tokens` `packing` `cli` |
 | [`karpathy-guidelines`](plugins/code-audit/skills/karpathy-guidelines/SKILL.md) | code-audit | 🟢 Free | Any coding task: ask instead of assuming, minimum code, surgical diffs, tests-first goals | Short, always-on coding discipline; enable everywhere. MIT (declared) | `coding-practices` `simplicity` `diffs` `testing` `guidelines` |
 | [`rea-reverse-engineering`](plugins/code-audit/skills/rea-reverse-engineering/SKILL.md) | code-audit | 🟢 Free | Inspecting what your own apps, dependencies, SDKs or third-party scripts really do (bundles, Electron, APKs, network captures), with evidence | Capable and well built; use only on authorized targets with per-project MCP setup. Star count looks fake. MIT | `reverse-engineering` `security` `mcp` `dependencies` |
 | [`security-review`](plugins/code-audit/skills/security-review/SKILL.md) | code-audit | 🟢 Free | Auth, input, secrets, uploads, payments, API routes, pre-deploy security; cloud/CI reference | Solid baseline checklist (from ECC, Solana removed, rate limiting fixed for Next.js) | `security` `auth` `nextjs` `supabase` `checklist` |
@@ -48,6 +50,7 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`spline`](plugins/web-design/skills/spline/SKILL.md) | web-design | 🟡 Freemium | Interactive 3D heroes and product showcases embedded in Next.js | Fastest real 3D for sites; free plan has a watermark (Hobby ~$12/mo removes it); needs mobile fallback | `3d` `webgl` `hero` `interactive` |
 | [`bklit-charts`](plugins/web-design/skills/bklit-charts/SKILL.md) | web-design | 🟢 Free | Charts and dashboards (shadcn registry): bar, area, line, pie, ring, radar, sankey, sparklines | Polished, free, MIT; links Bklit's official agent skills | `charts` `dashboards` `shadcn` `data-viz` |
 | [`scroll-world`](plugins/web-design/skills/scroll-world/SKILL.md) | web-design | 🟠 Pay-per-use | Cinematic scroll-scrubbed "fly through the world" landing pages from AI-generated scenes and seamless camera clips | Impressive and well built; costs ~$11–30 per chain (mobile ~2x), approved up front. MIT | `scroll` `landing-pages` `ai-video` `cinematic` |
+| [`design-skill-packs`](plugins/web-design/skills/design-skill-packs/SKILL.md) | web-design | 🟢 Free | Considering Impeccable, Anthropic's Frontend Design, UI/UX Pro Max or design-motion-principles in a project | Your design skills win; one pack per project. Impeccable's rule-based slop detector is the best add (telemetry opt-out); Frontend Design mostly redundant | `design` `anti-slop` `motion` `audit` `plugins` |
 | [`refero`](plugins/web-design/skills/refero/SKILL.md) | web-design | 🟡 Freemium | Researching real product screens/flows and site styles before designing | Worth Pro ($120/yr) if designing often; use for patterns, never to clone brands | `design-research` `ui-patterns` `references` `mcp` `design-tokens` |
 | [`penpot`](plugins/web-design/skills/penpot/SKILL.md) | web-design | 🟢 Free | Free Figma alternative; Claude reads/edits designs via the official MCP | Real free Figma alternative with CSS-native layouts; stay in Figma for Figma clients. MPL-2.0 | `design-tool` `figma-alternative` `mcp` `design-tokens` `design-to-code` |
 | [`open-higgsfield`](plugins/media-generation/skills/open-higgsfield/SKILL.md) | media-generation | 🟠 Pay-per-use | Generating lifelike AI video or photos via the self-hosted Open Higgsfield studio | Same output as Higgsfield, pay-per-use; the official plan is likely cheaper for heavy use. Unlicensed, unofficial | `ai-video` `ai-image` `higgsfield` `kling` `seedance` |
@@ -59,6 +62,7 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`technical-seo`](plugins/seo/skills/technical-seo/SKILL.md) | seo | 🟢 Free | Implementing SEO in code: metadata, sitemaps, canonicals, JSON-LD, Web Vitals, internal links (Next.js specifics) | The fix-it half; pair with openseo for data (from ECC) | `seo` `nextjs` `structured-data` `web-vitals` |
 | [`plausible`](plugins/seo/skills/plausible/SKILL.md) | seo | 🟢 Free (self-host) | Cookieless, GDPR-friendly analytics on your and client sites | Default analytics; cloud for funnels/ecommerce, CE free for own sites. AGPL | `analytics` `privacy` `gdpr` `self-hosted` `ga-alternative` |
 | [`weknora`](plugins/knowledge/skills/weknora/SKILL.md) | knowledge | 🟢 Free (self-host) | Q&A over a document set, "ask our docs" chatbots on client sites, client/project docs in Claude Code via MCP | Mature, free, self-hosted (Tencent, MIT). Bring your own models; heavy stack. Replaces Notion AI's Q&A, not Notion | `rag` `knowledge-base` `chatbot` `mcp` `self-hosted` |
+| [`context7`](plugins/knowledge/skills/context7/SKILL.md) | knowledge | 🟡 Freemium | Current, version-specific docs for fast-moving libraries (Next.js, Tailwind, Supabase, Motion) | Worth enabling for web work; free key enough. Pin it (the promo's `@latest` isn't). Queries go to Upstash. MIT client | `docs` `libraries` `mcp` `up-to-date` `nextjs` |
 | [`openwhispr`](plugins/productivity/skills/openwhispr/SKILL.md) | productivity | 🟡 Freemium | Hotkey voice dictation (including prompts into Claude Code), meeting transcription, notes | Real free Wispr Flow replacement with local models; Pro ($80/yr) only for cloud and sync. MIT | `dictation` `speech-to-text` `meetings` `local-ai` |
 | [`openproject`](plugins/productivity/skills/openproject/SKILL.md) | productivity | 🟢 Free (self-host) | Self-hosted project management (Gantt, boards, time tracking) for team or client projects; Claude creates and updates tasks via REST API | Mature and free (GPL), but heavy and Jira-like; overkill solo, so use GitHub Projects then. MCP is Enterprise-only | `project-management` `gantt` `time-tracking` `self-hosted` |
 | [`cal-com`](plugins/productivity/skills/cal-com/SKILL.md) | productivity | 🟡 Freemium | Booking pages, "book a call" on your or client sites (React embed), Calendly replacement | Excellent. Cloud free plan covers a solo user; self-hosted cal.diy is a stripped, non-production fork | `scheduling` `booking` `embeds` `calendly-alternative` |
@@ -66,11 +70,14 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`appflowy`](plugins/productivity/skills/appflowy/SKILL.md) | productivity | 🟡 Freemium | Private, local-first notes/docs/wiki workspace (Notion alternative) | Solid for own notes and wikis; tiny free cloud quota; Notion still wins on ecosystem. AGPL | `notes` `docs` `wiki` `notion-alternative` `local-first` |
 | [`bitwarden`](plugins/productivity/skills/bitwarden/SKILL.md) | productivity | 🟡 Freemium | Passwords, client credential handover, keeping API keys out of .env and chat (Secrets Manager/CLI) | Best open-source password manager; free/Premium plenty. Dev win is secret injection | `passwords` `secrets` `security` `cli` `1password-alternative` |
 | [`claude-peers`](plugins/productivity/skills/claude-peers/SKILL.md) | productivity | 🟢 Free | Separate Claude Code sessions messaging each other across projects | Clever but flagged: never with --dangerously-skip-permissions; native subagents and teams are safer. MIT | `multi-agent` `claude-code` `mcp` `coordination` `sessions` |
+| [`obsidian`](plugins/productivity/skills/obsidian/SKILL.md) | productivity | 🟢 Free | Claude writing or organizing notes, Bases and canvases in an Obsidian vault | Points to kepano's official-adjacent skills (installed upstream). Only if you use Obsidian. MIT | `notes` `obsidian` `markdown` `pkm` |
 | [`chatwoot`](plugins/customer-support/skills/chatwoot/SKILL.md) | customer-support | 🟢 Free (self-host) | Live chat on your or client sites, shared inbox (email, WhatsApp, social), help center | Mature free self-hosted Intercom replacement; AI and branding are paid. MIT core, commercial `enterprise/` | `live-chat` `helpdesk` `support-inbox` `widget` `self-hosted` |
 | [`ollama`](plugins/local-ai/skills/ollama/SKILL.md) | local-ai | 🟢 Free | Local/offline AI: models for WeKnora/AppFlowy/n8n, local APIs, Claude Code on local models | Easiest local LLM runtime; free and private, but far weaker than Claude for agentic coding. MIT | `local-ai` `llm` `embeddings` `privacy` `ollama` |
 | [`autoresearch`](plugins/local-ai/skills/autoresearch/SKILL.md) | local-ai | 🟠 Pay-per-use | Overnight autonomous LLM-training experiments on a rented GPU | Karpathy research toy; needs an H100-class GPU; isolate it (runs with permissions off). MIT | `ml-research` `llm-training` `autonomous-agents` `gpu` `experiments` |
-| [`n8n`](plugins/automation/skills/n8n/SKILL.md) | automation | 🟢 Free (self-host) | Automating processes: forms to CRM, notifications, AI pipelines, webhooks, Zapier replacement | Best self-hostable Zapier alternative; fair-code: free for own/clients' internal use, not to resell | `automation` `workflows` `integrations` `webhooks` `self-hosted` |
+| [`n8n`](plugins/automation/skills/n8n/SKILL.md) | automation | 🟢 Free (self-host) | Automating processes: forms to CRM, notifications, AI pipelines, webhooks, Zapier replacement | Best self-hostable Zapier alternative; fair-code: free for own/clients' internal use, not to resell. Includes n8n-MCP: dev instance only, telemetry off (it uploads sanitized workflows by default) | `automation` `workflows` `integrations` `webhooks` `self-hosted` `mcp` |
 | [`cli-anything`](plugins/automation/skills/cli-anything/SKILL.md) | automation | 🟢 Free | Letting Claude drive desktop apps (Blender, GIMP, Inkscape, LibreOffice, Obsidian…) via agent CLIs | Useful; community CLIs are third-party code, so install one at a time, reviewed and pinned. Apache-2.0 | `automation` `cli` `desktop-apps` `agent-tools` `blender` |
+| [`workflow-frameworks`](plugins/agent-workflows/skills/workflow-frameworks/SKILL.md) | agent-workflows | 🟢 Free | Bigger builds with a brainstorm → spec → plan → execute → verify loop: Superpowers or GSD | Both good; one per project, project scope. Superpowers lighter (but an always-on override skill); GSD (moved to open-gsd/gsd-core) heavier with ~30 hooks. MIT | `workflows` `planning` `spec-driven` `tdd` `subagents` |
+| [`claude-mem`](plugins/agent-workflows/skills/claude-mem/SKILL.md) | agent-workflows | 🟡 Freemium | Memory across many sessions in a long project | Useful, but install with `--provider claude` and telemetry off (hosted and PostHog by default). Try CLAUDE.md + notes first. Apache-2.0 | `memory` `context` `sessions` `mcp` `claude-code` |
 
 ```
 Skills/
@@ -86,7 +93,8 @@ Skills/
 │   ├── productivity/
 │   ├── customer-support/
 │   ├── local-ai/
-│   └── automation/
+│   ├── automation/
+│   └── agent-workflows/
 │       ├── .claude-plugin/plugin.json
 │       └── skills/<skill-name>/SKILL.md (+ SOURCE.md, scripts, references)
 ├── .claude/skills/add-skill/           # the /add-skill flow: review, categorize, place
@@ -110,6 +118,7 @@ Inside a Claude Code session:
 /plugin install customer-support@dean-skills
 /plugin install local-ai@dean-skills
 /plugin install automation@dean-skills
+/plugin install agent-workflows@dean-skills
 ```
 
 Or from your shell:
@@ -142,7 +151,8 @@ Copy `templates/project-settings.json` into the project's `.claude/settings.json
     "productivity@dean-skills": true,
     "customer-support@dean-skills": true,
     "local-ai@dean-skills": true,
-    "automation@dean-skills": true
+    "automation@dean-skills": true,
+    "agent-workflows@dean-skills": true
   }
 }
 ```
@@ -177,6 +187,12 @@ Both run the same flow, defined in [`.claude/skills/add-skill/`](.claude/skills/
 7. **Finish**: adds a row to the [skills catalog](#skills-catalog), bumps the plugin version, runs `claude plugin validate`, and reports what was added, merged, rejected, and what needs your decision.
 
 Then review it, and ask Claude to commit and push.
+
+## Where to find more
+
+- [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code): a curated directory of skills, plugins, hooks and workflows. It's CC BY-NC-ND, so it's linked, not copied: browse it, then add individual items here with the add-skill flow (each item's own license applies).
+- Anthropic's official marketplace (`claude-plugins-official`, built into Claude Code): `/plugin` to browse.
+- Not imported whole: Everything Claude Code (ECC, affaan-m/everything-claude-code). Its best skills were cherry-picked into this repo; installing it whole adds global hooks.
 
 ## Validate
 
