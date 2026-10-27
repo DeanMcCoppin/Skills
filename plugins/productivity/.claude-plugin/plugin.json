@@ -1,8 +1,8 @@
 {
   "name": "productivity",
   "displayName": "Productivity",
-  "version": "0.4.1",
-  "description": "Skills for tools that speed up Dean's own workflow: voice dictation into Claude Code and other apps, meeting notes, project management, scheduling, screen recording, and similar daily tools.",
+  "version": "0.5.0",
+  "description": "Skills for tools that speed up Dean's own workflow: voice dictation into Claude Code and other apps, meeting notes, project management, scheduling, screen recording, notes, passwords and secrets, and similar daily tools.",
   "author": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
@@ -19,6 +19,10 @@
     "scheduling",
     "cal-com",
     "screen-recording",
-    "cap"
+    "cap",
+    "notes",
+    "passwords",
+    "appflowy",
+    "bitwarden"
   ]
 }

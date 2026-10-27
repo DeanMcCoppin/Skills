@@ -8,10 +8,12 @@ My personal Claude Code skills, packaged as a plugin marketplace called **`dean-
 | `code-audit` | Reviews, security, performance, accessibility, dead code, dependency checks |
 | `web-design` | UI/UX, typography, layout, Tailwind, Framer Motion, maps, landing pages |
 | `media-generation` | AI image, video and voice generation (Open Higgsfield, VoiceStudio, model choice, prompting) |
-| `seo` | Keyword and competitor research, site audits, rank tracking, local SEO, AI visibility (OpenSEO) |
+| `seo` | SEO and analytics: keyword and competitor research, technical SEO, rank tracking, privacy-friendly analytics (OpenSEO, Plausible) |
 | `knowledge` | AI knowledge bases: RAG Q&A over documents, site chatbots, MCP access to docs (WeKnora) |
 | `productivity` | Tools for your own workflow: voice dictation, meeting notes, project management, scheduling, screen recording (OpenWhispr, OpenProject, Cal.com, Cap) |
 | `customer-support` | Live chat widgets, shared support inboxes, help centers for your and client sites (Chatwoot) |
+| `local-ai` | Run AI models on your own machine: local LLMs, embeddings and APIs (Ollama) |
+| `automation` | Workflow automation and integrations: n8n, webhooks, scheduled jobs |
 
 ## Skills catalog
 
@@ -43,17 +45,26 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`spline`](plugins/web-design/skills/spline/SKILL.md) | web-design | 🟡 Freemium | Interactive 3D heroes and product showcases embedded in Next.js | Fastest real 3D for sites; free plan has a watermark (Hobby ~$12/mo removes it); needs mobile fallback | `3d` `webgl` `hero` `interactive` |
 | [`bklit-charts`](plugins/web-design/skills/bklit-charts/SKILL.md) | web-design | 🟢 Free | Charts and dashboards (shadcn registry): bar, area, line, pie, ring, radar, sankey, sparklines | Polished, free, MIT; links Bklit's official agent skills | `charts` `dashboards` `shadcn` `data-viz` |
 | [`scroll-world`](plugins/web-design/skills/scroll-world/SKILL.md) | web-design | 🟠 Pay-per-use | Cinematic scroll-scrubbed "fly through the world" landing pages from AI-generated scenes and seamless camera clips | Impressive and well built; costs ~$11–30 per chain (mobile ~2x), approved up front. MIT | `scroll` `landing-pages` `ai-video` `cinematic` |
+| [`refero`](plugins/web-design/skills/refero/SKILL.md) | web-design | 🟡 Freemium | Researching real product screens/flows and site styles before designing | Worth Pro ($120/yr) if designing often; use for patterns, never to clone brands | `design-research` `ui-patterns` `references` `mcp` `design-tokens` |
+| [`penpot`](plugins/web-design/skills/penpot/SKILL.md) | web-design | 🟢 Free | Free Figma alternative; Claude reads/edits designs via the official MCP | Real free Figma alternative with CSS-native layouts; stay in Figma for Figma clients. MPL-2.0 | `design-tool` `figma-alternative` `mcp` `design-tokens` `design-to-code` |
 | [`open-higgsfield`](plugins/media-generation/skills/open-higgsfield/SKILL.md) | media-generation | 🟠 Pay-per-use | Generating lifelike AI video or photos via the self-hosted Open Higgsfield studio | Same output as Higgsfield, pay-per-use; the official plan is likely cheaper for heavy use. Unlicensed, unofficial | `ai-video` `ai-image` `higgsfield` `kling` `seedance` |
 | [`voicestudio`](plugins/media-generation/skills/voicestudio/SKILL.md) | media-generation | 🟢 Free | Voiceovers, narration, voice cloning/design, dubbing, transcripts and subtitles, run locally | Credible, free ElevenLabs replacement for most work; ElevenLabs still wins on top-tier voices. AGPL | `tts` `voice-cloning` `dubbing` `transcription` `local-ai` |
 | [`remotion`](plugins/media-generation/skills/remotion/SKILL.md) | media-generation | 🟡 Freemium | Videos with code in React: demos, promos, templated clips | Points to Remotion's official skills (not vendored, no upstream license); check Remotion's company license | `video` `react` `programmatic-video` |
+| [`yt-dlp`](plugins/media-generation/skills/yt-dlp/SKILL.md) | media-generation | 🟢 Free | Downloading own/licensed video or audio, clips, subtitles for transcripts | The standard tool; legal use only (own, licensed, CC). Not a YouTube Premium replacement | `video` `download` `audio` `subtitles` `cli` |
+| [`fooocus`](plugins/media-generation/skills/fooocus/SKILL.md) | media-generation | 🟢 Free | Free offline Midjourney-style images on a 4GB+ GPU | Good and free, but frozen on SDXL (LTS); Forge/ComfyUI for newer models | `ai-image` `stable-diffusion` `sdxl` `local-ai` `midjourney-alternative` |
 | [`openseo`](plugins/seo/skills/openseo/SKILL.md) | seo | 🟠 Pay-per-use | Keyword/competitor research, SEO audits, rank tracking via self-hosted OpenSEO + its MCP | Legit Semrush replacement at low volume; you still pay DataForSEO per request. MIT | `seo` `keywords` `backlinks` `rank-tracking` `mcp` |
 | [`technical-seo`](plugins/seo/skills/technical-seo/SKILL.md) | seo | 🟢 Free | Implementing SEO in code: metadata, sitemaps, canonicals, JSON-LD, Web Vitals, internal links (Next.js specifics) | The fix-it half; pair with openseo for data (from ECC) | `seo` `nextjs` `structured-data` `web-vitals` |
+| [`plausible`](plugins/seo/skills/plausible/SKILL.md) | seo | 🟢 Free (self-host) | Cookieless, GDPR-friendly analytics on your and client sites | Default analytics; cloud for funnels/ecommerce, CE free for own sites. AGPL | `analytics` `privacy` `gdpr` `self-hosted` `ga-alternative` |
 | [`weknora`](plugins/knowledge/skills/weknora/SKILL.md) | knowledge | 🟢 Free (self-host) | Q&A over a document set, "ask our docs" chatbots on client sites, client/project docs in Claude Code via MCP | Mature, free, self-hosted (Tencent, MIT). Bring your own models; heavy stack. Replaces Notion AI's Q&A, not Notion | `rag` `knowledge-base` `chatbot` `mcp` `self-hosted` |
 | [`openwhispr`](plugins/productivity/skills/openwhispr/SKILL.md) | productivity | 🟡 Freemium | Hotkey voice dictation (including prompts into Claude Code), meeting transcription, notes | Real free Wispr Flow replacement with local models; Pro ($80/yr) only for cloud and sync. MIT | `dictation` `speech-to-text` `meetings` `local-ai` |
 | [`openproject`](plugins/productivity/skills/openproject/SKILL.md) | productivity | 🟢 Free (self-host) | Self-hosted project management (Gantt, boards, time tracking) for team or client projects; Claude creates and updates tasks via REST API | Mature and free (GPL), but heavy and Jira-like; overkill solo, so use GitHub Projects then. MCP is Enterprise-only | `project-management` `gantt` `time-tracking` `self-hosted` |
 | [`cal-com`](plugins/productivity/skills/cal-com/SKILL.md) | productivity | 🟡 Freemium | Booking pages, "book a call" on your or client sites (React embed), Calendly replacement | Excellent. Cloud free plan covers a solo user; self-hosted cal.diy is a stripped, non-production fork | `scheduling` `booking` `embeds` `calendly-alternative` |
 | [`cap`](plugins/productivity/skills/cap/SKILL.md) | productivity | 🟡 Freemium | Screen recordings: instant share links, polished Studio demos, client walkthroughs | Great Loom replacement, but the free plan is personal-only; client work needs the $58 one-time license. AGPL | `screen-recording` `loom-alternative` `video` `async` |
+| [`appflowy`](plugins/productivity/skills/appflowy/SKILL.md) | productivity | 🟡 Freemium | Private, local-first notes/docs/wiki workspace (Notion alternative) | Solid for own notes and wikis; tiny free cloud quota; Notion still wins on ecosystem. AGPL | `notes` `docs` `wiki` `notion-alternative` `local-first` |
+| [`bitwarden`](plugins/productivity/skills/bitwarden/SKILL.md) | productivity | 🟡 Freemium | Passwords, client credential handover, keeping API keys out of .env and chat (Secrets Manager/CLI) | Best open-source password manager; free/Premium plenty. Dev win is secret injection | `passwords` `secrets` `security` `cli` `1password-alternative` |
 | [`chatwoot`](plugins/customer-support/skills/chatwoot/SKILL.md) | customer-support | 🟢 Free (self-host) | Live chat on your or client sites, shared inbox (email, WhatsApp, social), help center | Mature free self-hosted Intercom replacement; AI and branding are paid. MIT core, commercial `enterprise/` | `live-chat` `helpdesk` `support-inbox` `widget` `self-hosted` |
+| [`ollama`](plugins/local-ai/skills/ollama/SKILL.md) | local-ai | 🟢 Free | Local/offline AI: models for WeKnora/AppFlowy/n8n, local APIs, Claude Code on local models | Easiest local LLM runtime; free and private, but far weaker than Claude for agentic coding. MIT | `local-ai` `llm` `embeddings` `privacy` `ollama` |
+| [`n8n`](plugins/automation/skills/n8n/SKILL.md) | automation | 🟢 Free (self-host) | Automating processes: forms to CRM, notifications, AI pipelines, webhooks, Zapier replacement | Best self-hostable Zapier alternative; fair-code: free for own/clients' internal use, not to resell | `automation` `workflows` `integrations` `webhooks` `self-hosted` |
 
 ```
 Skills/
@@ -67,7 +78,9 @@ Skills/
 │   ├── seo/
 │   ├── knowledge/
 │   ├── productivity/
-│   └── customer-support/
+│   ├── customer-support/
+│   ├── local-ai/
+│   └── automation/
 │       ├── .claude-plugin/plugin.json
 │       └── skills/<skill-name>/SKILL.md (+ SOURCE.md, scripts, references)
 ├── .claude/skills/add-skill/           # the /add-skill flow: review, categorize, place
@@ -89,6 +102,8 @@ Inside a Claude Code session:
 /plugin install knowledge@dean-skills
 /plugin install productivity@dean-skills
 /plugin install customer-support@dean-skills
+/plugin install local-ai@dean-skills
+/plugin install automation@dean-skills
 ```
 
 Or from your shell:
@@ -119,7 +134,9 @@ Copy `templates/project-settings.json` into the project's `.claude/settings.json
     "seo@dean-skills": true,
     "knowledge@dean-skills": true,
     "productivity@dean-skills": true,
-    "customer-support@dean-skills": true
+    "customer-support@dean-skills": true,
+    "local-ai@dean-skills": true,
+    "automation@dean-skills": true
   }
 }
 ```

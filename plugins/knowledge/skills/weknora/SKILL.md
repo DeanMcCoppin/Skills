@@ -30,7 +30,7 @@ docker compose pull && docker compose up -d
 ```
 Web UI at http://localhost (onboarding wizard), API at :8080, and Langfuse tracing at :3000 (self-hosted). Optional services: `--profile neo4j` (knowledge graph), `--profile minio` (file storage).
 - Upgrades: set `WEKNORA_VERSION` in `.env`, then `docker compose pull && docker compose up -d`. Read the release's upgrade notes first.
-- Local models: start Ollama first and set `OLLAMA_BASE_URL`. See WeKnora's configuration docs for the embedding model name and RAM notes.
+- Local models: start Ollama first (see the `ollama` skill, local-ai plugin) and set `OLLAMA_BASE_URL`. See WeKnora's configuration docs for the embedding model name and RAM notes.
 
 **Lite single binary** (SQLite, no Postgres or Redis): for a laptop or a small VPS. See `docs/LITE.md` in the repo for what's missing compared to the standard setup.
 

@@ -1,8 +1,8 @@
 {
   "name": "media-generation",
   "displayName": "Media Generation",
-  "version": "0.3.1",
-  "description": "Skills for AI image, video and voice generation: tools, setup, model choice, and prompting for lifelike results.",
+  "version": "0.4.0",
+  "description": "Skills for AI image, video and voice generation plus media tools (download, convert): setup, model choice, and prompting for lifelike results.",
   "author": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
@@ -16,6 +16,9 @@
     "kling",
     "seedance",
     "tts",
-    "voice"
+    "voice",
+    "yt-dlp",
+    "fooocus",
+    "sdxl"
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "name": "automation",
+  "displayName": "Automation",
+  "version": "0.1.0",
+  "description": "Skills for workflow automation and integrations: n8n and similar tools, webhooks, scheduled jobs, connecting site forms and apps.",
+  "author": {
+    "name": "DeanMcCoppin",
+    "url": "https://github.com/DeanMcCoppin"
+  },
+  "repository": "https://github.com/DeanMcCoppin/Skills",
+  "keywords": [
+    "automation",
+    "workflows",
+    "integrations",
+    "n8n"
+  ]
+}

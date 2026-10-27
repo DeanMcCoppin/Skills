@@ -1,8 +1,8 @@
 {
   "name": "seo",
   "displayName": "SEO",
-  "version": "0.2.1",
-  "description": "Skills for SEO: keyword and competitor research, site audits, rank tracking, local SEO and AI visibility, and the tools that provide the data.",
+  "version": "0.3.0",
+  "description": "Skills for SEO and analytics: keyword and competitor research, site audits, rank tracking, local SEO and AI visibility, and the tools that provide the data.",
   "author": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
@@ -14,6 +14,8 @@
     "site-audit",
     "backlinks",
     "rank-tracking",
-    "openseo"
+    "openseo",
+    "analytics",
+    "plausible"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "dean-skills",
-  "description": "Dean's personal Claude Code skills, split into plugins you can enable per project: token efficiency, code audit, web design, media generation, SEO, knowledge bases, productivity, and customer support.",
+  "description": "Dean's personal Claude Code skills, split into plugins you can enable per project: token efficiency, code audit, web design, media generation, SEO, knowledge bases, productivity, customer support, local AI, and automation.",
   "owner": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
@@ -48,7 +48,7 @@
     {
       "name": "media-generation",
       "source": "./plugins/media-generation",
-      "description": "AI image, video and voice generation: tools, setup, model choice, and prompting for lifelike results.",
+      "description": "AI image, video and voice generation, plus media tools (download, convert): tools, setup, model choice, prompting.",
       "category": "media",
       "tags": [
         "ai-video",
@@ -60,12 +60,13 @@
     {
       "name": "seo",
       "source": "./plugins/seo",
-      "description": "SEO: keyword and competitor research, site audits, rank tracking, local SEO and AI visibility.",
+      "description": "SEO and analytics: keyword and competitor research, technical SEO, rank tracking, privacy-friendly analytics.",
       "category": "marketing",
       "tags": [
         "seo",
         "keywords",
-        "structured-data"
+        "structured-data",
+        "analytics"
       ]
     },
     {
@@ -101,6 +102,30 @@
         "live-chat",
         "helpdesk",
         "self-hosted"
+      ]
+    },
+    {
+      "name": "local-ai",
+      "source": "./plugins/local-ai",
+      "description": "Run AI models on your own machine: local LLMs and embeddings, local APIs, private or offline AI (Ollama).",
+      "category": "ai",
+      "tags": [
+        "local-ai",
+        "llm",
+        "ollama",
+        "privacy"
+      ]
+    },
+    {
+      "name": "automation",
+      "source": "./plugins/automation",
+      "description": "Workflow automation and integrations: n8n, webhooks, scheduled jobs, forms to CRM.",
+      "category": "automation",
+      "tags": [
+        "automation",
+        "workflows",
+        "integrations",
+        "n8n"
       ]
     }
   ]

@@ -7,11 +7,13 @@ This repo is Dean's personal Claude Code plugin marketplace, `dean-skills`. Each
 | Token optimisation | `plugins/token-efficiency` | context management, concise output, compaction, cheaper workflows |
 | Code auditing | `plugins/code-audit` | reviews, security, performance, accessibility, dead code, dependency checks |
 | Website design | `plugins/web-design` | UI/UX, typography, layout, Tailwind, Framer Motion, maps, landing pages |
-| Media generation | `plugins/media-generation` | AI image and video generation tools, setup, model choice, prompting |
-| SEO | `plugins/seo` | keyword and competitor research, site audits, rank tracking, local SEO, AI visibility |
+| Media generation | `plugins/media-generation` | AI image, video and voice generation, media download/convert tools, model choice, prompting |
+| SEO | `plugins/seo` | keyword and competitor research, site audits, rank tracking, local SEO, AI visibility, privacy-friendly analytics |
 | Knowledge | `plugins/knowledge` | AI knowledge bases, RAG, document Q&A, site chatbots, MCP access to docs |
 | Productivity | `plugins/productivity` | tools for Dean's own workflow: dictation, meeting notes, project management, scheduling, daily tools |
 | Customer support | `plugins/customer-support` | live chat widgets, support inboxes, help centers, helpdesk tools |
+| Local AI | `plugins/local-ai` | running AI models locally: Ollama, local LLMs and embeddings, local APIs |
+| Automation | `plugins/automation` | workflow automation and integrations: n8n, webhooks, scheduled jobs |
 
 Each skill lives at `plugins/<plugin>/skills/<skill-name>/SKILL.md`, with `SOURCE.md` and any supporting files (scripts, references, assets) in the same folder.
 

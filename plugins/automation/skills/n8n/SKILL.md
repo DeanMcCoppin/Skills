@@ -1,0 +1,41 @@
+---
+name: n8n
+description: "Build and self-host workflow automations with n8n (open-core Zapier/Make alternative, 400+ integrations, AI agent nodes, webhooks, cron) - form-to-CRM, notifications, content pipelines, AI enrichment, syncing tools - and have Claude design workflows as importable JSON. Use when Dean wants to automate a process, connect apps or a website form to other tools, replace Zapier or Make, set up webhooks or scheduled jobs, or mentions n8n."
+metadata:
+  pricing: free-self-host
+  cost: "Self-hosted Community edition free with unlimited executions (Sustainable Use License: internal business or personal use; Enterprise features paid). n8n Cloud is paid (check n8n.io/pricing)."
+  tags: [automation, workflows, integrations, webhooks, self-hosted]
+---
+
+# n8n
+
+[n8n-io/n8n](https://github.com/n8n-io/n8n) is a visual workflow builder with code nodes. It's **fair-code, not open source**: the Sustainable Use License.
+
+## License: check first
+
+- ✅ Dean's own business automations, personal use, and building workflows that run on **a client's own n8n instance** for that client's internal use.
+- ❌ Selling n8n itself as a hosted service, or giving it to others commercially. For example, one n8n instance that Dean runs and charges several clients to use, or white-labeling it inside a product. That needs an n8n commercial or Embed license.
+- Files with `.ee.` in the name or folder are Enterprise-licensed (SSO, advanced permissions, environments and so on).
+- When unsure about a client setup, check n8n's license FAQ, or ask n8n.
+
+## Self-host
+
+```bash
+docker volume create n8n_data
+docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
+```
+
+For anything real: Docker Compose with Postgres, a fixed `N8N_ENCRYPTION_KEY` (back it up, because credentials can't be decrypted without it), `WEBHOOK_URL` set to the public HTTPS URL, a reverse proxy with HTTPS, pinned image versions, and backups of the volume and database. Keep the editor behind auth (the owner account, plus SSO or a VPN for teams).
+
+## Building workflows with Claude
+
+- Claude can write workflows as **n8n JSON** for Dean to import (paste into the canvas or Import from file). Keep node types and versions to current, documented ones, and test with sample data before activating.
+- Typical site automations: a contact or booking form (webhook) → validate → CRM, email or Slack → reply. Cal.com booking → OpenProject task. Chatwoot conversation → AI summary → ticket. New blog post → social posts.
+- AI steps: n8n's AI Agent and LLM nodes work with Anthropic, OpenAI or local `ollama` models. Put limits on loops and tokens.
+- n8n can expose workflows as MCP tools (MCP Server Trigger) for Claude Code. Treat them as privileged actions: scope them narrowly and require auth.
+
+## Rules
+
+- Credentials live in n8n's credential store, never in node parameters, JSON exports or git. Strip credentials before sharing exported workflows.
+- Webhooks: use authentication (header or basic auth), validate input, rate-limit public ones, and make them idempotent (retries happen).
+- Add an error workflow (notify on failure), and log without personal data.

@@ -1,0 +1,17 @@
+{
+  "name": "local-ai",
+  "displayName": "Local AI",
+  "version": "0.1.0",
+  "description": "Skills for running AI models on your own machine: local LLMs and embeddings, local APIs for apps and tools, and private or offline AI.",
+  "author": {
+    "name": "DeanMcCoppin",
+    "url": "https://github.com/DeanMcCoppin"
+  },
+  "repository": "https://github.com/DeanMcCoppin/Skills",
+  "keywords": [
+    "local-ai",
+    "llm",
+    "ollama",
+    "privacy"
+  ]
+}
