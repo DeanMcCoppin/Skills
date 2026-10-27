@@ -1,6 +1,10 @@
 ---
 name: production-audit
-description: Local-evidence production-readiness audit with a score and ship/block verdict. Use when asked "is this ready to ship?", "what breaks in prod?", "what did we miss?", before a launch, demo or client handover, or after a merge, without sending repo data to external audit services.
+description: "Local-evidence production-readiness audit with a score and ship/block verdict. Use when asked \"is this ready to ship?\", \"what breaks in prod?\", \"what did we miss?\", before a launch, demo or client handover, or after a merge, without sending repo data to external audit services."
+metadata:
+  pricing: free
+  cost: "Free: local audit."
+  tags: [launch, readiness, audit, webhooks]
 ---
 
 # Production Audit

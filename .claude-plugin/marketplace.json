@@ -10,49 +10,98 @@
       "name": "token-efficiency",
       "source": "./plugins/token-efficiency",
       "description": "Context management, concise output, compaction, and cheaper workflows.",
-      "category": "productivity"
+      "category": "productivity",
+      "tags": [
+        "context",
+        "tokens",
+        "compaction",
+        "free"
+      ]
     },
     {
       "name": "code-audit",
       "source": "./plugins/code-audit",
       "description": "Code review, security, performance, accessibility, dead code, and dependency checks.",
-      "category": "quality"
+      "category": "quality",
+      "tags": [
+        "security",
+        "performance",
+        "accessibility",
+        "testing",
+        "free"
+      ]
     },
     {
       "name": "web-design",
       "source": "./plugins/web-design",
       "description": "UI/UX, typography, layout, Tailwind, Framer Motion, interactive maps, and landing pages.",
-      "category": "design"
+      "category": "design",
+      "tags": [
+        "ui",
+        "animation",
+        "3d",
+        "charts",
+        "nextjs",
+        "tailwind"
+      ]
     },
     {
       "name": "media-generation",
       "source": "./plugins/media-generation",
       "description": "AI image, video and voice generation: tools, setup, model choice, and prompting for lifelike results.",
-      "category": "media"
+      "category": "media",
+      "tags": [
+        "ai-video",
+        "ai-image",
+        "tts",
+        "video"
+      ]
     },
     {
       "name": "seo",
       "source": "./plugins/seo",
       "description": "SEO: keyword and competitor research, site audits, rank tracking, local SEO and AI visibility.",
-      "category": "marketing"
+      "category": "marketing",
+      "tags": [
+        "seo",
+        "keywords",
+        "structured-data"
+      ]
     },
     {
       "name": "knowledge",
       "source": "./plugins/knowledge",
       "description": "AI knowledge bases: RAG, document Q&A, knowledge graphs, site chatbots, and MCP access for Claude Code.",
-      "category": "knowledge"
+      "category": "knowledge",
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "chatbot",
+        "self-hosted"
+      ]
     },
     {
       "name": "productivity",
       "source": "./plugins/productivity",
       "description": "Tools that speed up your own workflow: voice dictation into Claude Code and other apps, meeting notes.",
-      "category": "productivity"
+      "category": "productivity",
+      "tags": [
+        "dictation",
+        "scheduling",
+        "project-management",
+        "screen-recording"
+      ]
     },
     {
       "name": "customer-support",
       "source": "./plugins/customer-support",
       "description": "Customer support for your and client sites: live chat widgets, shared inboxes, help centers.",
-      "category": "support"
+      "category": "support",
+      "tags": [
+        "live-chat",
+        "helpdesk",
+        "self-hosted"
+      ]
     }
   ]
 }

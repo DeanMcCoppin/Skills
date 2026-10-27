@@ -1,12 +1,19 @@
 {
   "name": "knowledge",
   "displayName": "Knowledge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Skills for AI knowledge bases: RAG, document Q&A, knowledge graphs, site chatbots, and connecting knowledge bases to Claude Code.",
   "author": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
   },
   "repository": "https://github.com/DeanMcCoppin/Skills",
-  "keywords": ["rag", "knowledge-base", "document-qa", "chatbot", "mcp", "weknora"]
+  "keywords": [
+    "rag",
+    "knowledge-base",
+    "document-qa",
+    "chatbot",
+    "mcp",
+    "weknora"
+  ]
 }

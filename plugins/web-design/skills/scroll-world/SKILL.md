@@ -1,6 +1,10 @@
 ---
 name: scroll-world
-description: Build an immersive scroll-scrubbed "fly through the world" landing page - as the visitor scrolls, a pre-rendered AI camera flight dives into each scene and flows seamlessly to the next (isometric diorama, papercraft, photoreal and other styles) - using Higgsfield/Monid generation, ffmpeg and a portable vanilla-JS scrub engine. Use when Dean wants a cinematic scroll hero, a "3D world" or diorama landing page, an Apple-style scroll-through product story, or to turn a business's value chain into a scrollable world. Costs money per build; budget is approved first.
+description: "Build an immersive scroll-scrubbed \"fly through the world\" landing page - as the visitor scrolls, a pre-rendered AI camera flight dives into each scene and flows seamlessly to the next (isometric diorama, papercraft, photoreal and other styles) - using Higgsfield/Monid generation, ffmpeg and a portable vanilla-JS scrub engine. Use when Dean wants a cinematic scroll hero, a \"3D world\" or diorama landing page, an Apple-style scroll-through product story, or to turn a business's value chain into a scrollable world. Costs money per build; budget is approved first."
+metadata:
+  pricing: pay-per-use
+  cost: "About $11–30 per desktop chain (mobile ~2x) in Higgsfield/Monid generation fees; skill is free (MIT)."
+  tags: [scroll, landing-pages, ai-video, cinematic]
 ---
 
 # scroll-world

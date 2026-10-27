@@ -1,6 +1,10 @@
 ---
 name: motion
-description: Framer Motion (motion/react) system for React and Next.js. Shared duration/easing/spring tokens, reduced-motion and SSR rules, plus ready patterns for buttons, modals, toasts, stagger lists, page transitions, scroll reveals, layout animations, drag and swipe, text and number animation, SVG drawing, useAnimate sequences and loaders. Use whenever adding or reviewing animation in a React/Next.js project.
+description: "Framer Motion (motion/react) system for React and Next.js. Shared duration/easing/spring tokens, reduced-motion and SSR rules, plus ready patterns for buttons, modals, toasts, stagger lists, page transitions, scroll reveals, layout animations, drag and swipe, text and number animation, SVG drawing, useAnimate sequences and loaders. Use whenever adding or reviewing animation in a React/Next.js project."
+metadata:
+  pricing: free
+  cost: "Free (motion is MIT)."
+  tags: [animation, framer-motion, react, nextjs]
 ---
 
 # Motion

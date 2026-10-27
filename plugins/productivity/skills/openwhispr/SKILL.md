@@ -1,6 +1,10 @@
 ---
 name: openwhispr
-description: Set up and use OpenWhispr, the free open-source Wispr Flow alternative for hotkey voice dictation (local Whisper/Parakeet), meeting transcription and notes. Use when Dean wants to dictate instead of type (including prompts into Claude Code), set up voice typing or meeting notes, compares Wispr Flow or Granola, or has trouble with OpenWhispr hotkeys, models or permissions.
+description: "Set up and use OpenWhispr, the free open-source Wispr Flow alternative for hotkey voice dictation (local Whisper/Parakeet), meeting transcription and notes. Use when Dean wants to dictate instead of type (including prompts into Claude Code), set up voice typing or meeting notes, compares Wispr Flow or Granola, or has trouble with OpenWhispr hotkeys, models or permissions."
+metadata:
+  pricing: freemium
+  cost: "Local dictation free and unlimited; Pro $80/yr only for hosted cloud, sync and mobile."
+  tags: [dictation, speech-to-text, meetings, local-ai]
 ---
 
 # OpenWhispr

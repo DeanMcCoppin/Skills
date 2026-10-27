@@ -1,6 +1,10 @@
 ---
 name: bencho-blocks
-description: Add polished interactive React micro-interactions from Bencho (bencho.dev): tilt cards, magnetic docks, swipe decks, slide-to-confirm, rolling counters, signature pads, liquid toggles, loaders, plus synthesised UI sounds. Use when Dean wants a component to feel delightful or tactile, asks for micro-interactions, hover/drag/press effects, a fancy toggle, counter, carousel, upload zone or OTP input, or mentions Bencho.
+description: "Add polished interactive React micro-interactions from Bencho (bencho.dev): tilt cards, magnetic docks, swipe decks, slide-to-confirm, rolling counters, signature pads, liquid toggles, loaders, plus synthesised UI sounds. Use when Dean wants a component to feel delightful or tactile, asks for micro-interactions, hover/drag/press effects, a fancy toggle, counter, carousel, upload zone or OTP input, or mentions Bencho."
+metadata:
+  pricing: freemium
+  cost: "44 free MIT blocks; Pro €79/yr or €99 once for 140+ more and the MCP."
+  tags: [micro-interactions, react, framer-motion, ui-sounds]
 ---
 
 # Bencho blocks

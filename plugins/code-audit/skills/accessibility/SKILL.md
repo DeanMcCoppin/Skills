@@ -1,6 +1,10 @@
 ---
 name: accessibility
-description: Build and audit accessible web UI to WCAG 2.2 AA in React/Next.js - semantic HTML, labels and form errors, ARIA (only when needed), keyboard navigation, focus management, contrast, target size, reduced motion, screen-reader support. Use when building or reviewing forms, modals, menus, tabs or other interactive components, fixing a11y lint or review findings, or auditing a page before launch.
+description: "Build and audit accessible web UI to WCAG 2.2 AA in React/Next.js - semantic HTML, labels and form errors, ARIA (only when needed), keyboard navigation, focus management, contrast, target size, reduced motion, screen-reader support. Use when building or reviewing forms, modals, menus, tabs or other interactive components, fixing a11y lint or review findings, or auditing a page before launch."
+metadata:
+  pricing: free
+  cost: "Free: guidance. Tools used (axe, jsx-a11y) are free."
+  tags: [a11y, wcag, react, forms]
 ---
 
 # Accessibility (WCAG 2.2 AA)

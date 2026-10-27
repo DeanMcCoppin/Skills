@@ -1,6 +1,10 @@
 ---
 name: e2e-testing
-description: Playwright end-to-end testing for web apps - test structure, page objects, user-facing locators, config, CI on GitHub Actions, traces and artifacts, and fixing flaky tests. Use when writing or reviewing Playwright tests, setting up E2E in a project or CI, or debugging flaky E2E runs.
+description: "Playwright end-to-end testing for web apps - test structure, page objects, user-facing locators, config, CI on GitHub Actions, traces and artifacts, and fixing flaky tests. Use when writing or reviewing Playwright tests, setting up E2E in a project or CI, or debugging flaky E2E runs."
+metadata:
+  pricing: free
+  cost: "Free (Playwright)."
+  tags: [testing, playwright, ci]
 ---
 
 # E2E Testing Patterns

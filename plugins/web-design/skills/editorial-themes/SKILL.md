@@ -1,6 +1,10 @@
 ---
 name: editorial-themes
-description: Build complete website themes in a quiet, editorial, premium style (typography-led, photo-led, square-cornered, restrained color, minimal motion), like the Lexington Astro themes. Use when Dean asks for a "theme", "template", "Lexington-style" or "editorial" site, a premium marketing site for a specific business type (law firm, agency, architect, restaurant, real estate, clinic, SaaS, portfolio, magazine…), or a multi-page site that should look like a high-end studio built it.
+description: "Build complete website themes in a quiet, editorial, premium style (typography-led, photo-led, square-cornered, restrained color, minimal motion), like the Lexington Astro themes. Use when Dean asks for a \"theme\", \"template\", \"Lexington-style\" or \"editorial\" site, a premium marketing site for a specific business type (law firm, agency, architect, restaurant, real estate, clinic, SaaS, portfolio, magazine…), or a multi-page site that should look like a high-end studio built it."
+metadata:
+  pricing: free
+  cost: "Free: original style guide (Lexington themes themselves are paid)."
+  tags: [themes, marketing-sites, typography, editorial]
 ---
 
 # Editorial themes

@@ -1,6 +1,10 @@
 ---
 name: weknora
-description: Set up and use WeKnora, Tencent's open-source self-hosted AI knowledge base (RAG Q&A with citations, agents, auto-wiki and knowledge graph over uploaded documents). Use when Dean wants to chat with or search a set of documents, build a knowledge base, add an "ask our docs" chatbot or embed widget to a client website, connect project or client docs to Claude Code over MCP, or mentions WeKnora, RAG, or Notion AI Q&A.
+description: "Set up and use WeKnora, Tencent's open-source self-hosted AI knowledge base (RAG Q&A with citations, agents, auto-wiki and knowledge graph over uploaded documents). Use when Dean wants to chat with or search a set of documents, build a knowledge base, add an \"ask our docs\" chatbot or embed widget to a client website, connect project or client docs to Claude Code over MCP, or mentions WeKnora, RAG, or Notion AI Q&A."
+metadata:
+  pricing: free-self-host
+  cost: "Free (MIT, self-host); bring your own model API (paid per token) or free local models; needs a server."
+  tags: [rag, knowledge-base, chatbot, mcp, self-hosted]
 ---
 
 # WeKnora

@@ -1,6 +1,10 @@
 ---
 name: dean-design-taste
-description: Dean's default design and frontend stack. Use whenever building or restyling any web UI (pages, components, landing pages, dashboards, maps), choosing fonts, colors, layout or animation, or starting a new frontend project. Apply these defaults unless the project already has its own design system.
+description: "Dean's default design and frontend stack. Use whenever building or restyling any web UI (pages, components, landing pages, dashboards, maps), choosing fonts, colors, layout or animation, or starting a new frontend project. Apply these defaults unless the project already has its own design system."
+metadata:
+  pricing: free
+  cost: "Free: house style."
+  tags: [design, nextjs, tailwind, house-style]
 ---
 
 # Dean's design taste

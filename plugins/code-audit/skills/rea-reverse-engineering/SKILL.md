@@ -1,6 +1,10 @@
 ---
 name: rea-reverse-engineering
-description: Use REA (Reverse Engineer Anything), an MCP server and CLI, to inspect and explain how software really behaves (Electron/JavaScript apps, native binaries, .NET, Android APKs, websites, network captures, firmware), with evidence. Use when Dean needs to debug or audit Dean's own app's build output, check what a dependency, SDK or third-party script actually does, investigate a suspicious package, analyze a site's network behavior, or asks to "reverse engineer" something Dean owns or is authorized to test.
+description: "Use REA (Reverse Engineer Anything), an MCP server and CLI, to inspect and explain how software really behaves (Electron/JavaScript apps, native binaries, .NET, Android APKs, websites, network captures, firmware), with evidence. Use when Dean needs to debug or audit Dean's own app's build output, check what a dependency, SDK or third-party script actually does, investigate a suspicious package, analyze a site's network behavior, or asks to \"reverse engineer\" something Dean owns or is authorized to test."
+metadata:
+  pricing: free
+  cost: "Free (MIT, runs locally). Optional commercial tools (IDA, Hopper) cost extra."
+  tags: [reverse-engineering, security, mcp, dependencies]
 ---
 
 # REA: reverse engineering with guardrails

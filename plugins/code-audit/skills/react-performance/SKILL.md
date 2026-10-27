@@ -1,6 +1,10 @@
 ---
 name: react-performance
-description: React and Next.js performance rules (adapted from Vercel's React Best Practices), ordered by impact - request waterfalls, bundle size, server-side work, client fetching, re-renders, rendering, JS micro-optimizations. Use when writing, reviewing or refactoring React/Next.js code for speed, diagnosing slow loads or interactions, or fixing Core Web Vitals (LCP, INP, CLS) and bundle-size regressions.
+description: "React and Next.js performance rules (adapted from Vercel's React Best Practices), ordered by impact - request waterfalls, bundle size, server-side work, client fetching, re-renders, rendering, JS micro-optimizations. Use when writing, reviewing or refactoring React/Next.js code for speed, diagnosing slow loads or interactions, or fixing Core Web Vitals (LCP, INP, CLS) and bundle-size regressions."
+metadata:
+  pricing: free
+  cost: "Free: rules."
+  tags: [react, nextjs, performance, web-vitals]
 ---
 
 # React performance

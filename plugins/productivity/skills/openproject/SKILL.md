@@ -1,6 +1,10 @@
 ---
 name: openproject
-description: Set up and use OpenProject, the open-source self-hosted project management suite (work packages, Gantt, Kanban/Scrum boards, time and cost tracking, wiki, meetings), and drive it from Claude Code through its REST API. Use when Dean wants project or task management for client or team work, compares Asana, Jira, MS Project or Monday, needs Gantt timelines or time tracking, or wants Claude to create or update tasks in OpenProject.
+description: "Set up and use OpenProject, the open-source self-hosted project management suite (work packages, Gantt, Kanban/Scrum boards, time and cost tracking, wiki, meetings), and drive it from Claude Code through its REST API. Use when Dean wants project or task management for client or team work, compares Asana, Jira, MS Project or Monday, needs Gantt timelines or time tracking, or wants Claude to create or update tasks in OpenProject."
+metadata:
+  pricing: free-self-host
+  cost: "Community edition free (GPL, self-host); Enterprise from €5.95/user/mo with a 25-user minimum."
+  tags: [project-management, gantt, time-tracking, self-hosted]
 ---
 
 # OpenProject

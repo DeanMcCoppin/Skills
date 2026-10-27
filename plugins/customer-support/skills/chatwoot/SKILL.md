@@ -1,6 +1,10 @@
 ---
 name: chatwoot
-description: Set up and use Chatwoot, the open-source Intercom/Zendesk alternative: a live chat widget for websites plus a shared support inbox for email, WhatsApp, Instagram, Facebook, Telegram and SMS, with a help center and canned replies. Use when Dean wants live chat or a support widget on Dean's or a client's site, a shared inbox for customer messages, a help center or FAQ portal, or compares Intercom, Crisp, Zendesk or Tidio.
+description: "Set up and use Chatwoot, the open-source Intercom/Zendesk alternative: a live chat widget for websites plus a shared support inbox for email, WhatsApp, Instagram, Facebook, Telegram and SMS, with a help center and canned replies. Use when Dean wants live chat or a support widget on Dean's or a client's site, a shared inbox for customer messages, a help center or FAQ portal, or compares Intercom, Crisp, Zendesk or Tidio."
+metadata:
+  pricing: free-self-host
+  cost: "Self-hosted Community free (MIT core); cloud free for 2 agents; AI and branding are paid ($19–99/agent/mo)."
+  tags: [live-chat, helpdesk, support-inbox, widget, self-hosted]
 ---
 
 # Chatwoot

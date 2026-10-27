@@ -1,6 +1,10 @@
 ---
 name: strategic-compact
-description: Decide when to /compact a Claude Code session - at logical task boundaries (after research, after planning, after debugging, before switching tasks) instead of mid-task auto-compaction - and what to save to files first. Use in long sessions approaching context limits, when switching to unrelated work, after a milestone, or when answers start losing track of earlier details.
+description: "Decide when to /compact a Claude Code session - at logical task boundaries (after research, after planning, after debugging, before switching tasks) instead of mid-task auto-compaction - and what to save to files first. Use in long sessions approaching context limits, when switching to unrelated work, after a milestone, or when answers start losing track of earlier details."
+metadata:
+  pricing: free
+  cost: "Free: guidance only."
+  tags: [context, compaction, long-sessions]
 ---
 
 # Strategic compaction

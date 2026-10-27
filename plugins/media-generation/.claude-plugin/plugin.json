@@ -1,12 +1,21 @@
 {
   "name": "media-generation",
   "displayName": "Media Generation",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Skills for AI image, video and voice generation: tools, setup, model choice, and prompting for lifelike results.",
   "author": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
   },
   "repository": "https://github.com/DeanMcCoppin/Skills",
-  "keywords": ["video", "image", "generation", "higgsfield", "kling", "seedance", "tts", "voice"]
+  "keywords": [
+    "video",
+    "image",
+    "generation",
+    "higgsfield",
+    "kling",
+    "seedance",
+    "tts",
+    "voice"
+  ]
 }

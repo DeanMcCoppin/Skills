@@ -1,6 +1,10 @@
 ---
 name: technical-seo
-description: Audit and implement technical and on-page SEO in a site's code - crawlability, indexability, canonicals, redirects, sitemaps and robots, titles and meta descriptions, heading structure, JSON-LD structured data, Core Web Vitals, internal linking and keyword-to-URL mapping - with Next.js Metadata API specifics. Use when building or reviewing a site for search, fixing SEO issues found in an audit, adding schema markup, or launching a site.
+description: "Audit and implement technical and on-page SEO in a site's code - crawlability, indexability, canonicals, redirects, sitemaps and robots, titles and meta descriptions, heading structure, JSON-LD structured data, Core Web Vitals, internal linking and keyword-to-URL mapping - with Next.js Metadata API specifics. Use when building or reviewing a site for search, fixing SEO issues found in an audit, adding schema markup, or launching a site."
+metadata:
+  pricing: free
+  cost: "Free: checklist and implementation."
+  tags: [seo, nextjs, structured-data, web-vitals]
 ---
 
 # SEO

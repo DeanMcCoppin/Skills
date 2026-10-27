@@ -1,12 +1,18 @@
 {
   "name": "customer-support",
   "displayName": "Customer Support",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Skills for customer support on your own and client sites: live chat widgets, shared inboxes across email and social channels, help centers, and helpdesk tools.",
   "author": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
   },
   "repository": "https://github.com/DeanMcCoppin/Skills",
-  "keywords": ["live-chat", "helpdesk", "support-inbox", "help-center", "chatwoot"]
+  "keywords": [
+    "live-chat",
+    "helpdesk",
+    "support-inbox",
+    "help-center",
+    "chatwoot"
+  ]
 }

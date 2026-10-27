@@ -1,6 +1,10 @@
 ---
 name: bklit-charts
-description: Add polished, animated charts to React/Next.js apps with Bklit UI, a free MIT shadcn registry of composable charts (area, bar, line, pie, ring, radar, gauge, funnel, heatmap, sankey, sparkline, candlestick, choropleth and more) built on visx. Use when Dean needs charts, dashboards, analytics or stats sections, KPI sparklines, or wants to replace Recharts or shadcn's ChartContainer, or mentions Bklit.
+description: "Add polished, animated charts to React/Next.js apps with Bklit UI, a free MIT shadcn registry of composable charts (area, bar, line, pie, ring, radar, gauge, funnel, heatmap, sankey, sparkline, candlestick, choropleth and more) built on visx. Use when Dean needs charts, dashboards, analytics or stats sections, KPI sparklines, or wants to replace Recharts or shadcn's ChartContainer, or mentions Bklit."
+metadata:
+  pricing: free
+  cost: "Free (MIT). Bklit Studio is free to use but proprietary."
+  tags: [charts, dashboards, shadcn, data-viz]
 ---
 
 # Bklit charts

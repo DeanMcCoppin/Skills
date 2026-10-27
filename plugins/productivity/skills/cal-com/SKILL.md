@@ -1,6 +1,10 @@
 ---
 name: cal-com
-description: Set up scheduling with Cal.com (the open-source Calendly alternative) and add booking to websites: event types, availability, calendar sync, payments, and inline/popup booking embeds in React/Next.js sites. Use when Dean needs a booking or scheduling page, wants "book a call" or appointment booking on Dean's or a client's site, compares Calendly, or mentions Cal.com or cal.diy.
+description: "Set up scheduling with Cal.com (the open-source Calendly alternative) and add booking to websites: event types, availability, calendar sync, payments, and inline/popup booking embeds in React/Next.js sites. Use when Dean needs a booking or scheduling page, wants \"book a call\" or appointment booking on Dean's or a client's site, compares Calendly, or mentions Cal.com or cal.diy."
+metadata:
+  pricing: freemium
+  cost: "Cloud free plan for 1 user; Teams $12/user/mo; self-hosted cal.diy is free (MIT)."
+  tags: [scheduling, booking, embeds, calendly-alternative]
 ---
 
 # Cal.com

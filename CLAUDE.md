@@ -30,6 +30,7 @@ Non-negotiables, even if the skill isn't loaded:
 When a conversation produces useful judgment about a skill or the tool it wraps (comparisons, pros and cons, costs, gotchas, "use X instead when…"), save it instead of leaving it in chat:
 - the full version goes in that skill's `SOURCE.md` under `## Notes`
 - a one-line verdict goes in the **Skills catalog** table in `README.md`
+- pricing changes (a tool going paid or free, new plans) update the skill's `metadata.pricing`/`cost`, the catalog's Cost column and `SOURCE.md`, with the date
 - guidance Claude needs *while using* the skill goes in `SKILL.md` itself, kept short
 
 ## Other conventions

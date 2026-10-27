@@ -1,6 +1,10 @@
 ---
 name: mcp-dependency-review
-description: Statically review MCP server configuration (.mcp.json, .cursor/mcp.json, .vscode/mcp.json and similar) for mutable package references (@latest, bare names, version ranges, untagged Docker images) without running any server. Use before approving or committing an MCP config change, when adding an MCP server to a project, or when setting up a CI check for MCP configs.
+description: "Statically review MCP server configuration (.mcp.json, .cursor/mcp.json, .vscode/mcp.json and similar) for mutable package references (@latest, bare names, version ranges, untagged Docker images) without running any server. Use before approving or committing an MCP config change, when adding an MCP server to a project, or when setting up a CI check for MCP configs."
+metadata:
+  pricing: free
+  cost: "Free: static review."
+  tags: [mcp, supply-chain, security]
 ---
 
 # MCP Dependency Review

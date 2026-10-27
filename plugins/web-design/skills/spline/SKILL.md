@@ -1,6 +1,10 @@
 ---
 name: spline
-description: Design interactive 3D scenes in Spline and embed them in websites (React/Next.js via @splinetool/react-spline, or iframe/viewer) - hero objects users can drag and rotate, 3D product showcases, playful interactive backgrounds - with performance, mobile and accessibility fallbacks. Use when Dean wants real 3D on a site, an interactive 3D hero, a draggable object, or mentions Spline.
+description: "Design interactive 3D scenes in Spline and embed them in websites (React/Next.js via @splinetool/react-spline, or iframe/viewer) - hero objects users can drag and rotate, 3D product showcases, playful interactive backgrounds - with performance, mobile and accessibility fallbacks. Use when Dean wants real 3D on a site, an interactive 3D hero, a draggable object, or mentions Spline."
+metadata:
+  pricing: freemium
+  cost: "Free plan exports with a Spline watermark; Hobby ~$12/mo removes it, Pro ~$25/mo adds code export."
+  tags: [3d, webgl, hero, interactive]
 ---
 
 # Spline

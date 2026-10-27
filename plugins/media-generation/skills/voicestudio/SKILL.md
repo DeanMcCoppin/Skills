@@ -1,6 +1,10 @@
 ---
 name: voicestudio
-description: Set up and use VoiceStudio, a free, fully local ElevenLabs alternative for text-to-speech, voice cloning, voice design, dubbing, transcription and audiobooks. Use when Dean needs a voiceover, narration, a cloned or designed voice, dubbing of a video, subtitles or transcripts, or asks about ElevenLabs, TTS, or "make this speak".
+description: "Set up and use VoiceStudio, a free, fully local ElevenLabs alternative for text-to-speech, voice cloning, voice design, dubbing, transcription and audiobooks. Use when Dean needs a voiceover, narration, a cloned or designed voice, dubbing of a video, subtitles or transcripts, or asks about ElevenLabs, TTS, or \"make this speak\"."
+metadata:
+  pricing: free
+  cost: "Free and local (AGPL); needs a decent GPU or Apple Silicon. ElevenLabs alternative."
+  tags: [tts, voice-cloning, dubbing, transcription, local-ai]
 ---
 
 # VoiceStudio

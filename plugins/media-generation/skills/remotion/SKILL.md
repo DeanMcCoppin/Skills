@@ -1,6 +1,10 @@
 ---
 name: remotion
-description: Make videos with code using Remotion (React): product demos, launch and promo videos, animated explainers, social clips, data-driven or templated videos, captions and charts. Use when Dean wants to create or edit a video programmatically in React, render MP4s from components, build a video template, or works in a Remotion project.
+description: "Make videos with code using Remotion (React): product demos, launch and promo videos, animated explainers, social clips, data-driven or templated videos, captions and charts. Use when Dean wants to create or edit a video programmatically in React, render MP4s from components, build a video template, or works in a Remotion project."
+metadata:
+  pricing: freemium
+  cost: "Free for individuals and companies up to 3 people; larger companies need a paid company license."
+  tags: [video, react, programmatic-video]
 ---
 
 # Remotion

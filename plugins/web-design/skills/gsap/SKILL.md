@@ -1,6 +1,10 @@
 ---
 name: gsap
-description: Use GSAP (GreenSock) for timeline choreography and scroll storytelling on websites - ScrollTrigger pinning and scrubbing, SplitText headline reveals, SVG drawing and morphing, Flip transitions, smooth scrolling - in React/Next.js (useGSAP) or plain HTML/Astro. Use when Dean wants scroll-driven sections, complex sequenced animations, text-splitting effects, SVG morphs, an award-style landing page, or mentions GSAP, ScrollTrigger or SplitText.
+description: "Use GSAP (GreenSock) for timeline choreography and scroll storytelling on websites - ScrollTrigger pinning and scrubbing, SplitText headline reveals, SVG drawing and morphing, Flip transitions, smooth scrolling - in React/Next.js (useGSAP) or plain HTML/Astro. Use when Dean wants scroll-driven sections, complex sequenced animations, text-splitting effects, SVG morphs, an award-style landing page, or mentions GSAP, ScrollTrigger or SplitText."
+metadata:
+  pricing: free
+  cost: "Free incl. all plugins and commercial use (proprietary Webflow license, not open source)."
+  tags: [animation, scroll, scrolltrigger, splittext, svg]
 ---
 
 # GSAP

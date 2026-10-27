@@ -1,6 +1,10 @@
 ---
 name: token-budget-advisor
-description: Let Dean pick response depth (25% essential, 50% moderate, 75% detailed, 100% exhaustive) with rough token estimates before answering, then keep that level for the session. Use only when Dean asks to control answer length or token use - "short version", "tldr", "brief answer", "how many tokens", "answer at 50%", "save tokens", "full deep dive". Don't trigger when "token" means an auth or payment token.
+description: "Let Dean pick response depth (25% essential, 50% moderate, 75% detailed, 100% exhaustive) with rough token estimates before answering, then keep that level for the session. Use only when Dean asks to control answer length or token use - \"short version\", \"tldr\", \"brief answer\", \"how many tokens\", \"answer at 50%\", \"save tokens\", \"full deep dive\". Don't trigger when \"token\" means an auth or payment token."
+metadata:
+  pricing: free
+  cost: "Free: guidance only."
+  tags: [tokens, response-length]
 ---
 
 # Token Budget Advisor (TBA)

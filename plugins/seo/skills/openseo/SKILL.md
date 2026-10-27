@@ -1,6 +1,10 @@
 ---
 name: openseo
-description: Set up and use OpenSEO, the open-source Semrush/Ahrefs alternative (keyword research, rank tracking, site audits, backlinks, competitors, local SEO, AI visibility), self-hosted and connected to Claude Code over MCP. Use when Dean asks for SEO research or an SEO audit, keyword ideas, competitor or backlink analysis, rank tracking, mentions Semrush or Ahrefs, or wants SEO data for a site Dean is building.
+description: "Set up and use OpenSEO, the open-source Semrush/Ahrefs alternative (keyword research, rank tracking, site audits, backlinks, competitors, local SEO, AI visibility), self-hosted and connected to Claude Code over MCP. Use when Dean asks for SEO research or an SEO audit, keyword ideas, competitor or backlink analysis, rank tracking, mentions Semrush or Ahrefs, or wants SEO data for a site Dean is building."
+metadata:
+  pricing: pay-per-use
+  cost: "App free (self-host); SEO data billed per request by DataForSEO. Hosted: $10/mo + 28% markup."
+  tags: [seo, keywords, backlinks, rank-tracking, mcp]
 ---
 
 # OpenSEO

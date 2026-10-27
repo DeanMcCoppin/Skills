@@ -1,6 +1,10 @@
 ---
 name: cap
-description: Set up and use Cap, the open-source Loom alternative for screen recording: Instant mode (shareable link the moment you stop) and Studio mode (local editor with zooms, backgrounds, captions, 4K export). Use when Dean wants to record a screen walkthrough, demo, bug report or client update video, share a recording link, compares Loom, or mentions Cap.
+description: "Set up and use Cap, the open-source Loom alternative for screen recording: Instant mode (shareable link the moment you stop) and Studio mode (local editor with zooms, backgrounds, captions, 4K export). Use when Dean wants to record a screen walkthrough, demo, bug report or client update video, share a recording link, compares Loom, or mentions Cap."
+metadata:
+  pricing: freemium
+  cost: "Free for personal use only; client/commercial work needs the $58 one-time (or $29/yr) license; Pro $12/mo."
+  tags: [screen-recording, loom-alternative, video, async]
 ---
 
 # Cap

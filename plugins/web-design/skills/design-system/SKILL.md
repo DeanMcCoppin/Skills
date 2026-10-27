@@ -1,6 +1,10 @@
 ---
 name: design-system
 description: "Generate a design system from an existing codebase, or audit one for visual consistency: extract tokens (colors, typography, spacing, radii, shadows) into design-tokens.json and CSS variables with a DESIGN.md rationale and an HTML preview, score the UI across 10 dimensions, and flag AI-slop patterns. Use when starting a design system, before a redesign, when the UI looks off and you can't say why, or when reviewing a PR that touches styling."
+metadata:
+  pricing: free
+  cost: "Free: workflow."
+  tags: [design-tokens, audit, ai-slop]
 ---
 
 # Design System — Generate & Audit Visual Systems

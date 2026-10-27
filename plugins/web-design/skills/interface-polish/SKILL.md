@@ -1,6 +1,10 @@
 ---
 name: interface-polish
-description: Apply concrete design-engineering details that make interfaces feel polished. Use when a UI feels off, flat, cramped, jumpy or unfinished, or when reviewing or improving spacing, nested radii, borders vs shadows, text wrapping, tabular numbers, image outlines, transitions, hit areas and interaction states.
+description: "Apply concrete design-engineering details that make interfaces feel polished. Use when a UI feels off, flat, cramped, jumpy or unfinished, or when reviewing or improving spacing, nested radii, borders vs shadows, text wrapping, tabular numbers, image outlines, transitions, hit areas and interaction states."
+metadata:
+  pricing: free
+  cost: "Free: checklist."
+  tags: [polish, ui-details, css]
 ---
 
 # Interface polish

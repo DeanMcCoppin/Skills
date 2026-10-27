@@ -1,6 +1,10 @@
 ---
 name: open-higgsfield
-description: Set up and use Open Higgsfield, a self-hosted studio for AI image and video generation (Kling, Seedance, Wan, Flux, Higgsfield Soul and ~30 more models). Use when Dean wants lifelike or cinematic AI video, realistic AI photos, b-roll, product or hero shots generated for a site, or asks to "use Higgsfield", "generate a video" or "run Open Higgsfield".
+description: "Set up and use Open Higgsfield, a self-hosted studio for AI image and video generation (Kling, Seedance, Wan, Flux, Higgsfield Soul and ~30 more models). Use when Dean wants lifelike or cinematic AI video, realistic AI photos, b-roll, product or hero shots generated for a site, or asks to \"use Higgsfield\", \"generate a video\" or \"run Open Higgsfield\"."
+metadata:
+  pricing: pay-per-use
+  cost: "App free (self-host); every generation billed to your Higgsfield API key."
+  tags: [ai-video, ai-image, higgsfield, kling, seedance]
 ---
 
 # Open Higgsfield

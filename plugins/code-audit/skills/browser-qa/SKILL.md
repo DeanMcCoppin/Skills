@@ -1,6 +1,10 @@
 ---
 name: browser-qa
 description: "Post-deploy UI verification in a real browser: console and network errors, Core Web Vitals smoke check, forms and auth flows with test accounts, screenshots at 375/768/1440px against baselines, and axe accessibility checks, ending in a SHIP / SHIP WITH FIXES / DO NOT SHIP verdict. Use after deploying to staging or a preview URL, before shipping frontend changes, when reviewing a frontend PR, or to check responsive layout and accessibility on a live page."
+metadata:
+  pricing: free
+  cost: "Free: needs a browser tool in the session."
+  tags: [qa, post-deploy, visual-regression, a11y]
 ---
 
 # Browser QA — Automated Visual Testing & Interaction

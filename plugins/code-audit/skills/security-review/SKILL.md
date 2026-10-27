@@ -1,6 +1,10 @@
 ---
 name: security-review
-description: Security checklist and patterns for web apps (Next.js, Supabase, APIs). Use when adding authentication or authorization, handling user input or file uploads, creating API routes or Server Actions, working with secrets, adding payments or other sensitive features, integrating third-party APIs, or before a production deploy.
+description: "Security checklist and patterns for web apps (Next.js, Supabase, APIs). Use when adding authentication or authorization, handling user input or file uploads, creating API routes or Server Actions, working with secrets, adding payments or other sensitive features, integrating third-party APIs, or before a production deploy."
+metadata:
+  pricing: free
+  cost: "Free: checklist."
+  tags: [security, auth, nextjs, supabase, checklist]
 ---
 
 # Security Review Skill

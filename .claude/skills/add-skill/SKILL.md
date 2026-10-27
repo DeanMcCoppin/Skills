@@ -1,6 +1,6 @@
 ---
 name: add-skill
-description: Import a skill into Dean's dean-skills marketplace repo. Use when Dean asks to add, import, install, save or "grab" a skill, pastes skill text or a SKILL.md, gives a GitHub/URL link to a skill, or says "sort the inbox". Reads and security-reviews every file, checks the license, picks a category plugin, dedupes against existing skills, normalizes it, places it under plugins/<category>/skills/, and reports back.
+description: "Import a skill into Dean's dean-skills marketplace repo. Use when Dean asks to add, import, install, save or \"grab\" a skill, pastes skill text or a SKILL.md, gives a GitHub/URL link to a skill, or says \"sort the inbox\". Reads and security-reviews every file, checks the license, picks a category plugin, dedupes against existing skills, normalizes it, places it under plugins/<category>/skills/, and reports back."
 ---
 
 # Add a skill
@@ -51,7 +51,18 @@ Read [categories.md](categories.md) and pick **one** plugin by the skill's prima
 ## 6. Normalize and place
 
 - Folder: `plugins/<category>/skills/<kebab-case-name>/`. The name is short and describes the job (`react-perf-audit`, not `skill-v2-final`).
-- Frontmatter: `name` (same as the folder) and `description`. Only add `license`, `compatibility`, `metadata` or `allowed-tools` if needed; other keys break claude.ai uploads.
+- Frontmatter: `name` (same as the folder), `description` (**always in double quotes**, because unquoted `: ` breaks strict YAML parsers), and a `metadata` block with the cost label and tags:
+
+  ```yaml
+  metadata:
+    pricing: free            # free | free-self-host | freemium | pay-per-use | paid
+    cost: "One line: what's free, what costs money and roughly how much (as of <date>)."
+    tags: [kebab-case, 3-5, tags]
+  ```
+
+  Pricing labels: **free** means no cost; **free-self-host** means free software that needs your own server; **freemium** means a useful free tier, with a paid plan for some features or for commercial use; **pay-per-use** means the tool is free but usage (API calls, generations, data) is billed; **paid** means it needs a paid plan to use at all. Judge by what Dean would actually pay for client work: a "free" plan that forbids commercial use is **freemium**. Reuse existing tags where they fit (check the README catalog) before inventing new ones.
+
+  Don't add any other frontmatter keys except `license`, `compatibility` or `allowed-tools`, and only when needed: other keys break claude.ai uploads. Remove broad `allowed-tools` grants from imported skills unless Dean approves them.
 - Rewrite `description` so it says **when** to trigger: lead with the situations and phrases that should invoke it, then what it does. Keep it under ~1,000 characters.
 - Keep `SKILL.md` under ~500 lines. Move long reference material into sibling files and link to them.
 - Copy supporting files (scripts, references, assets) next to `SKILL.md` and fix any paths that pointed at the old layout. Leave out junk (`.git`, `node_modules`, OS files, unrelated READMEs).
@@ -74,7 +85,7 @@ Read [categories.md](categories.md) and pick **one** plugin by the skill's prima
   ```
 
   Fill in Notes from the review and any research done in the conversation. It's the record of why the skill is here.
-- Add or update the skill's row in the **Skills catalog** table in `README.md`: linked name, plugin, "use it when" (one line), verdict (one line).
+- Add or update the skill's row in the **Skills catalog** table in `README.md`: linked name, plugin, **cost badge** (🟢 Free / 🟢 Free (self-host) / 🟡 Freemium / 🟠 Pay-per-use / 🔴 Paid, matching `metadata.pricing`), "use it when" (one line), verdict (one line), and tags.
 ## 7. Finish
 
 - If the item came from `inbox/`, delete it there once placed. Flagged, skipped or undecided items stay in `inbox/`.
@@ -94,7 +105,7 @@ Keep it short:
 ```
 Added
 - <skill> → <category>  (<why, if not obvious>)  [license, source]
-  Verdict: <one line>
+  Verdict: <one line>  |  Cost: <badge + one-line cost>  |  Tags: <tags>
 Merged
 - <new> + <existing> → <result>: <one line on what changed>
 Rejected / flagged
