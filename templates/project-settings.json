@@ -1,0 +1,15 @@
+{
+  "extraKnownMarketplaces": {
+    "dean-skills": {
+      "source": {
+        "source": "github",
+        "repo": "DeanMcCoppin/claude-skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "token-efficiency@dean-skills": true,
+    "code-audit@dean-skills": true,
+    "web-design@dean-skills": true
+  }
+}

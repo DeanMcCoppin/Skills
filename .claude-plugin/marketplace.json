@@ -1,0 +1,28 @@
+{
+  "name": "dean-skills",
+  "description": "Dean's personal Claude Code skills, split into plugins you can enable per project: token efficiency, code audit, and web design.",
+  "owner": {
+    "name": "DeanMcCoppin",
+    "url": "https://github.com/DeanMcCoppin"
+  },
+  "plugins": [
+    {
+      "name": "token-efficiency",
+      "source": "./plugins/token-efficiency",
+      "description": "Context management, concise output, compaction, and cheaper workflows.",
+      "category": "productivity"
+    },
+    {
+      "name": "code-audit",
+      "source": "./plugins/code-audit",
+      "description": "Code review, security, performance, accessibility, dead code, and dependency checks.",
+      "category": "quality"
+    },
+    {
+      "name": "web-design",
+      "source": "./plugins/web-design",
+      "description": "UI/UX, typography, layout, Tailwind, Framer Motion, interactive maps, and landing pages.",
+      "category": "design"
+    }
+  ]
+}
