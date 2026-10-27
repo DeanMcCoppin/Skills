@@ -9,6 +9,7 @@ Each category is one plugin in this marketplace, so Dean can enable categories s
 | Website design | `plugins/web-design` | Making web UIs look and feel good: UI/UX, typography, color, layout, design systems, Tailwind, Framer Motion and animation, interactive maps (Mapbox, Google Maps), landing pages and marketing sites | Backend, APIs, auth, databases; a11y *audits* (→ code auditing) |
 | Media generation | `plugins/media-generation` | Generating images, video or audio with AI models: generation tools and studios, model selection, prompting for realism, consistency across shots, exporting media for sites | Building the website that shows the media (→ website design) |
 | SEO | `plugins/seo` | Getting found in search: keyword and competitor research, SEO audits, backlinks, rank tracking, local SEO, AI-answer visibility, Search Console, SEO data tools | On-page code quality or performance audits (→ code auditing); visual page design (→ website design) |
+| Knowledge | `plugins/knowledge` | Making documents answerable: knowledge bases, RAG, document Q&A, knowledge graphs, wikis built from docs, docs chatbots and widgets, feeding docs to agents over MCP | Writing or editing the docs themselves; general context-saving tricks (→ token optimisation) |
 
 ## Choosing between two
 
