@@ -13,6 +13,8 @@ metadata:
 - **Free:** 44 blocks and 24 sounds in [cabralorenzo/bencho](https://github.com/cabralorenzo/bencho), MIT licensed.
 - **Pro:** 140+ more blocks, the Bencho MCP, and downloads (€79/year, or €99 once for early members). Pro blocks are under the Bencho Pro licence: use them in any project, but never redistribute them as a kit or library, and never commit them to this skills repo.
 
+Comparing with Cult UI, Watermelon UI or Skiper UI? See the `component-libraries` skill.
+
 ## When to reach for one
 
 Use a block where interaction **is** the point: a hero toy, a signature moment in a product (like/reaction, pay button, confirm), onboarding, playful empty states. Use at most one or two per page. Don't put them on every button. They must still respect `dean-design-taste` and `prefers-reduced-motion`.
