@@ -64,8 +64,17 @@ Read [categories.md](categories.md) and pick **one** plugin by the skill's prima
   - License: <SPDX id>
   - Imported: <YYYY-MM-DD>
   - Changes: <renamed from X; description rewritten; merged with Y; removed Z because …>
+
+  ## Notes
+  - Verdict: <one line: when it's the right choice, and when it isn't>
+  - Good at: <…>
+  - Weak at / risks: <…>
+  - Alternatives: <other skills or tools, and how this compares>
+  - Review: <what was checked, at which commit/version; anything to re-check on update>
   ```
 
+  Fill in Notes from the review and any research done in the conversation. It's the record of why the skill is here.
+- Add or update the skill's row in the **Skills catalog** table in `README.md`: linked name, plugin, "use it when" (one line), verdict (one line).
 ## 7. Finish
 
 - If the item came from `inbox/`, delete it there once placed. Flagged, skipped or undecided items stay in `inbox/`.
@@ -85,6 +94,7 @@ Keep it short:
 ```
 Added
 - <skill> → <category>  (<why, if not obvious>)  [license, source]
+  Verdict: <one line>
 Merged
 - <new> + <existing> → <result>: <one line on what changed>
 Rejected / flagged

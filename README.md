@@ -9,6 +9,16 @@ My personal Claude Code skills, packaged as a plugin marketplace called **`dean-
 | `web-design` | UI/UX, typography, layout, Tailwind, Framer Motion, maps, landing pages |
 | `media-generation` | AI image and video generation (Open Higgsfield setup, model choice, lifelike prompting) |
 
+## Skills catalog
+
+One line per skill. The full verdict (strengths, weaknesses, alternatives) is in each skill's `SOURCE.md`.
+
+| Skill | Plugin | Use it when | Verdict |
+| --- | --- | --- | --- |
+| [`dean-design-taste`](plugins/web-design/skills/dean-design-taste/SKILL.md) | web-design | Any web UI work. Sets my default stack, look and motion rules | Baseline for every frontend; fonts and colors still TODO |
+| [`editorial-themes`](plugins/web-design/skills/editorial-themes/SKILL.md) | web-design | Building a full premium "theme" site for a business (law, agency, architect, restaurant…) in a Lexington-like editorial style | Strong for marketing sites; overkill for app UIs |
+| [`open-higgsfield`](plugins/media-generation/skills/open-higgsfield/SKILL.md) | media-generation | Generating lifelike AI video or photos via the self-hosted Open Higgsfield studio | Same output as Higgsfield, pay-per-use; the official plan is likely cheaper for heavy use. Unlicensed, unofficial |
+
 ```
 Skills/
 ├── .claude-plugin/marketplace.json     # marketplace "dean-skills"
@@ -34,6 +44,7 @@ Inside a Claude Code session:
 /plugin install web-design@dean-skills
 /plugin install code-audit@dean-skills
 /plugin install token-efficiency@dean-skills
+/plugin install media-generation@dean-skills
 ```
 
 Or from your shell:
@@ -91,8 +102,8 @@ Both run the same flow, defined in [`.claude/skills/add-skill/`](.claude/skills/
 3. **License**: skips anything that isn't permissively licensed.
 4. **Filter**: picks a category by the skill's primary purpose ([categories.md](.claude/skills/add-skill/categories.md)). If it fits none, Claude asks and can create a new category plugin.
 5. **Dedupe**: compares it with every existing skill and proposes one merged skill instead of two.
-6. **Place**: kebab-case folder, clean frontmatter, a description that says *when* to trigger, `SOURCE.md` (URL, author, license, changes), supporting files alongside.
-7. **Finish**: bumps the plugin version, runs `claude plugin validate`, and reports what was added, merged, rejected, and what needs your decision.
+6. **Place**: kebab-case folder, clean frontmatter, a description that says *when* to trigger, supporting files alongside, and `SOURCE.md` with provenance (URL, author, license, changes) plus **notes**: verdict, strengths, weaknesses, alternatives.
+7. **Finish**: adds a row to the [skills catalog](#skills-catalog), bumps the plugin version, runs `claude plugin validate`, and reports what was added, merged, rejected, and what needs your decision.
 
 Then review it, and ask Claude to commit and push.
 

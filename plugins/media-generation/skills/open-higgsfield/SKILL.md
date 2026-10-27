@@ -13,6 +13,13 @@ description: Set up and use Open Higgsfield, a self-hosted studio for AI image a
 - **No license.** The repo has no LICENSE, so it's all rights reserved. Run it for Dean's own use only. Never copy its code into Dean's projects or this repo.
 - **Keys stay local.** Never use the hosted site (openhiggsfield.ai): whoever hosts it controls where the key goes. Run it locally. Never commit keys, never paste them in chat logs or files in a repo, and never print them.
 
+## Open Higgsfield or official Higgsfield?
+
+Same models, same output: this is only a different front end and billing route.
+- **Open Higgsfield**: occasional use, comparing many models, pay-as-you-go, scripting.
+- **Official app + subscription**: heavy regular use (bundled credits are likely cheaper) or when Dean needs its presets, effects or character tools.
+If Dean is unsure, ask roughly how many clips a month Dean expects, and point to the pricing page to compare. Full notes are in [SOURCE.md](SOURCE.md).
+
 ## Set up (once per machine)
 
 1. Clone outside any project, pinned to the reviewed commit:

@@ -21,6 +21,13 @@ Non-negotiables, even if the skill isn't loaded:
 - Skip anything without a permissive license.
 - One skill per job: merge duplicates instead of keeping both.
 
+## Keep the knowledge
+
+When a conversation produces useful judgment about a skill or the tool it wraps (comparisons, pros and cons, costs, gotchas, "use X instead when…"), save it instead of leaving it in chat:
+- the full version goes in that skill's `SOURCE.md` under `## Notes`
+- a one-line verdict goes in the **Skills catalog** table in `README.md`
+- guidance Claude needs *while using* the skill goes in `SKILL.md` itself, kept short
+
 ## Other conventions
 
 - Don't rename plugins or their marketplace entries: the names are install IDs (`<plugin>@dean-skills`) used in every project's settings. New categories are added as new plugins (see categories.md).

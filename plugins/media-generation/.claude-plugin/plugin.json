@@ -1,7 +1,7 @@
 {
   "name": "media-generation",
   "displayName": "Media Generation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Skills for AI image and video generation: tools, setup, model choice, and prompting for lifelike results.",
   "author": {
     "name": "DeanMcCoppin",
