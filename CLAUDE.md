@@ -1,4 +1,4 @@
-# claude-skills: instructions for Claude
+# Skills: instructions for Claude
 
 This repo is Dean's personal Claude Code plugin marketplace, `dean-skills`. It holds three plugins:
 

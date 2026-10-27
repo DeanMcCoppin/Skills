@@ -1,4 +1,4 @@
-# claude-skills
+# Skills
 
 My personal Claude Code skills, packaged as a plugin marketplace called **`dean-skills`**. Skills are grouped into three plugins so each category can be turned on per project.
 
@@ -9,7 +9,7 @@ My personal Claude Code skills, packaged as a plugin marketplace called **`dean-
 | `web-design` | UI/UX, typography, layout, Tailwind, Framer Motion, maps, landing pages |
 
 ```
-claude-skills/
+Skills/
 ├── .claude-plugin/marketplace.json     # marketplace "dean-skills"
 ├── inbox/                              # drop raw skills here, then "sort the inbox"
 ├── plugins/
@@ -27,7 +27,7 @@ claude-skills/
 Inside a Claude Code session:
 
 ```
-/plugin marketplace add DeanMcCoppin/claude-skills
+/plugin marketplace add DeanMcCoppin/Skills
 /plugin install web-design@dean-skills
 /plugin install code-audit@dean-skills
 /plugin install token-efficiency@dean-skills
@@ -36,7 +36,7 @@ Inside a Claude Code session:
 Or from your shell:
 
 ```bash
-claude plugin marketplace add DeanMcCoppin/claude-skills
+claude plugin marketplace add DeanMcCoppin/Skills
 claude plugin install web-design@dean-skills          # add --scope project to record it in the repo
 ```
 
@@ -51,7 +51,7 @@ Copy `templates/project-settings.json` into the project's `.claude/settings.json
 ```json
 {
   "extraKnownMarketplaces": {
-    "dean-skills": { "source": { "source": "github", "repo": "DeanMcCoppin/claude-skills" } }
+    "dean-skills": { "source": { "source": "github", "repo": "DeanMcCoppin/Skills" } }
   },
   "enabledPlugins": {
     "token-efficiency@dean-skills": true,
@@ -70,7 +70,7 @@ The current docs say cloud sessions **don't install plugins or marketplaces decl
 1. **Enable the skills on your claude.ai account** (skills settings on claude.ai, or **Customize** in the Desktop app; upload each skill folder). Cloud sessions, Cowork, and signed-in terminal sessions all load account skills. Frontmatter in this repo is kept to upload-safe keys for this reason.
 2. **Commit the skills into the project** at `.claude/skills/<skill-name>/`. Cloud sessions load a repo's `.claude/skills/` (except in project threads). Example:
    ```bash
-   cp -r ~/src/claude-skills/plugins/web-design/skills/* .claude/skills/
+   cp -r ~/src/Skills/plugins/web-design/skills/* .claude/skills/
    ```
 
 ## Adding skills: the inbox workflow
