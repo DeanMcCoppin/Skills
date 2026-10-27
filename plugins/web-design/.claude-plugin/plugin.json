@@ -1,12 +1,12 @@
 {
   "name": "web-design",
   "displayName": "Web Design",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Skills for UI/UX, typography, layout, Tailwind, Framer Motion, interactive maps, and landing pages.",
   "author": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
   },
   "repository": "https://github.com/DeanMcCoppin/Skills",
-  "keywords": ["ui", "ux", "tailwind", "framer-motion", "maps", "landing-pages"]
+  "keywords": ["ui", "ux", "tailwind", "framer-motion", "maps", "landing-pages", "gsap", "3d", "charts"]
 }

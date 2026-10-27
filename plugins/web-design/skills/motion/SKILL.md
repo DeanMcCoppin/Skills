@@ -9,6 +9,7 @@ The motion layer for `dean-design-taste`. Motion must **guide attention, communi
 
 - Standard UI patterns: [references/patterns.md](references/patterns.md)
 - Gestures, text, SVG, sequences, loaders: [references/advanced.md](references/advanced.md)
+- Long timelines, pinned/scrubbed scroll storytelling, SplitText or non-React pages: use the `gsap` skill instead (never both on one element).
 
 ## Rules
 
