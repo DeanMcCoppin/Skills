@@ -27,7 +27,7 @@
     {
       "name": "media-generation",
       "source": "./plugins/media-generation",
-      "description": "AI image and video generation: tools, setup, model choice, and prompting for lifelike results.",
+      "description": "AI image, video and voice generation: tools, setup, model choice, and prompting for lifelike results.",
       "category": "media"
     }
   ]

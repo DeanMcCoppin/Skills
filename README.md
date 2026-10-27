@@ -7,7 +7,7 @@ My personal Claude Code skills, packaged as a plugin marketplace called **`dean-
 | `token-efficiency` | Context management, concise output, compaction, cheaper workflows |
 | `code-audit` | Reviews, security, performance, accessibility, dead code, dependency checks |
 | `web-design` | UI/UX, typography, layout, Tailwind, Framer Motion, maps, landing pages |
-| `media-generation` | AI image and video generation (Open Higgsfield setup, model choice, lifelike prompting) |
+| `media-generation` | AI image, video and voice generation (Open Higgsfield, VoiceStudio, model choice, prompting) |
 
 ## Skills catalog
 
@@ -18,6 +18,7 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`dean-design-taste`](plugins/web-design/skills/dean-design-taste/SKILL.md) | web-design | Any web UI work. Sets my default stack, look and motion rules | Baseline for every frontend; fonts and colors still TODO |
 | [`editorial-themes`](plugins/web-design/skills/editorial-themes/SKILL.md) | web-design | Building a full premium "theme" site for a business (law, agency, architect, restaurant…) in a Lexington-like editorial style | Strong for marketing sites; overkill for app UIs |
 | [`open-higgsfield`](plugins/media-generation/skills/open-higgsfield/SKILL.md) | media-generation | Generating lifelike AI video or photos via the self-hosted Open Higgsfield studio | Same output as Higgsfield, pay-per-use; the official plan is likely cheaper for heavy use. Unlicensed, unofficial |
+| [`voicestudio`](plugins/media-generation/skills/voicestudio/SKILL.md) | media-generation | Voiceovers, narration, voice cloning/design, dubbing, transcripts and subtitles, run locally | Credible, free ElevenLabs replacement for most work; ElevenLabs still wins on top-tier voices. AGPL |
 
 ```
 Skills/
