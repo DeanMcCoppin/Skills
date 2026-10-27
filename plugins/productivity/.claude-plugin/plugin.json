@@ -1,7 +1,7 @@
 {
   "name": "productivity",
   "displayName": "Productivity",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Skills for tools that speed up Dean's own workflow: voice dictation into Claude Code and other apps, meeting notes, project management, scheduling, screen recording, notes, passwords and secrets, and similar daily tools.",
   "author": {
     "name": "DeanMcCoppin",
