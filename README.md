@@ -1,12 +1,13 @@
 # Skills
 
-My personal Claude Code skills, packaged as a plugin marketplace called **`dean-skills`**. Skills are grouped into three plugins so each category can be turned on per project.
+My personal Claude Code skills, packaged as a plugin marketplace called **`dean-skills`**. Skills are grouped into plugins so each category can be turned on per project.
 
 | Plugin | What's in it |
 | --- | --- |
 | `token-efficiency` | Context management, concise output, compaction, cheaper workflows |
 | `code-audit` | Reviews, security, performance, accessibility, dead code, dependency checks |
 | `web-design` | UI/UX, typography, layout, Tailwind, Framer Motion, maps, landing pages |
+| `media-generation` | AI image and video generation (Open Higgsfield setup, model choice, lifelike prompting) |
 
 ```
 Skills/
@@ -15,7 +16,8 @@ Skills/
 ├── plugins/
 │   ├── token-efficiency/
 │   ├── code-audit/
-│   └── web-design/
+│   ├── web-design/
+│   └── media-generation/
 │       ├── .claude-plugin/plugin.json
 │       └── skills/<skill-name>/SKILL.md (+ SOURCE.md, scripts, references)
 ├── .claude/skills/add-skill/           # the /add-skill flow: review, categorize, place
@@ -57,12 +59,13 @@ Copy `templates/project-settings.json` into the project's `.claude/settings.json
   "enabledPlugins": {
     "token-efficiency@dean-skills": true,
     "code-audit@dean-skills": true,
-    "web-design@dean-skills": true
+    "web-design@dean-skills": true,
+    "media-generation@dean-skills": true
   }
 }
 ```
 
-Because all three plugins use relative paths inside this repo, once you trust the project folder Claude Code registers the marketplace and loads the enabled plugins. To switch one off just for yourself in a project, set it to `false` in `.claude/settings.local.json`.
+Because all plugins use relative paths inside this repo, once you trust the project folder Claude Code registers the marketplace and loads the enabled plugins. To switch one off just for yourself in a project, set it to `false` in `.claude/settings.local.json`.
 
 ### Cloud sessions (claude.ai/code) — read this
 

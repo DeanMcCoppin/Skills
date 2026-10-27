@@ -7,6 +7,7 @@ Each category is one plugin in this marketplace, so Dean can enable categories s
 | Token optimisation | `plugins/token-efficiency` | Using fewer tokens or less context: concise output styles, compaction and summarizing, context and memory management, subagent delegation to save context, choosing cheaper models or effort, batching or caching work | General productivity or writing style that isn't about cost or context |
 | Code auditing | `plugins/code-audit` | Judging existing code: code review, security review, performance profiling, accessibility audits, dead code, dependency and license checks, test coverage gaps, lint-style rules | Writing new features; design-quality critiques of a UI (→ website design) |
 | Website design | `plugins/web-design` | Making web UIs look and feel good: UI/UX, typography, color, layout, design systems, Tailwind, Framer Motion and animation, interactive maps (Mapbox, Google Maps), landing pages and marketing sites | Backend, APIs, auth, databases; a11y *audits* (→ code auditing) |
+| Media generation | `plugins/media-generation` | Generating images, video or audio with AI models: generation tools and studios, model selection, prompting for realism, consistency across shots, exporting media for sites | Building the website that shows the media (→ website design) |
 
 ## Choosing between two
 

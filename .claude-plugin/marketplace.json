@@ -1,6 +1,6 @@
 {
   "name": "dean-skills",
-  "description": "Dean's personal Claude Code skills, split into plugins you can enable per project: token efficiency, code audit, and web design.",
+  "description": "Dean's personal Claude Code skills, split into plugins you can enable per project: token efficiency, code audit, web design, and media generation.",
   "owner": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
@@ -23,6 +23,12 @@
       "source": "./plugins/web-design",
       "description": "UI/UX, typography, layout, Tailwind, Framer Motion, interactive maps, and landing pages.",
       "category": "design"
+    },
+    {
+      "name": "media-generation",
+      "source": "./plugins/media-generation",
+      "description": "AI image and video generation: tools, setup, model choice, and prompting for lifelike results.",
+      "category": "media"
     }
   ]
 }

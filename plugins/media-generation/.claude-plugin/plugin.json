@@ -1,0 +1,12 @@
+{
+  "name": "media-generation",
+  "displayName": "Media Generation",
+  "version": "0.1.0",
+  "description": "Skills for AI image and video generation: tools, setup, model choice, and prompting for lifelike results.",
+  "author": {
+    "name": "DeanMcCoppin",
+    "url": "https://github.com/DeanMcCoppin"
+  },
+  "repository": "https://github.com/DeanMcCoppin/Skills",
+  "keywords": ["video", "image", "generation", "higgsfield", "kling", "seedance"]
+}
