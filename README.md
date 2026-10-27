@@ -19,6 +19,7 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 
 | Skill | Plugin | Use it when | Verdict |
 | --- | --- | --- | --- |
+| [`rea-reverse-engineering`](plugins/code-audit/skills/rea-reverse-engineering/SKILL.md) | code-audit | Inspecting what your own apps, dependencies, SDKs or third-party scripts really do (bundles, Electron, APKs, network captures), with evidence | Capable and well built; use only on authorized targets with per-project MCP setup. Star count looks fake. MIT |
 | [`dean-design-taste`](plugins/web-design/skills/dean-design-taste/SKILL.md) | web-design | Any web UI work. Sets my default stack, look and motion rules | Baseline for every frontend; fonts and colors still TODO |
 | [`editorial-themes`](plugins/web-design/skills/editorial-themes/SKILL.md) | web-design | Building a full premium "theme" site for a business (law, agency, architect, restaurant…) in a Lexington-like editorial style | Strong for marketing sites; overkill for app UIs |
 | [`bencho-blocks`](plugins/web-design/skills/bencho-blocks/SKILL.md) | web-design | Adding a tactile micro-interaction or UI sound (tilt, dock, swipe, slide-to-confirm, counters…) from Bencho | 44 free MIT blocks are excellent for signature moments; needs token mapping for Tailwind. Pro is optional |

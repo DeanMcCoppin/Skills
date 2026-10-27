@@ -1,12 +1,12 @@
 {
   "name": "code-audit",
   "displayName": "Code Audit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Skills for code review, security, performance, accessibility, dead code, and dependency checks.",
   "author": {
     "name": "DeanMcCoppin",
     "url": "https://github.com/DeanMcCoppin"
   },
   "repository": "https://github.com/DeanMcCoppin/Skills",
-  "keywords": ["review", "security", "performance", "accessibility", "dependencies"]
+  "keywords": ["review", "security", "performance", "accessibility", "dependencies", "reverse-engineering", "rea"]
 }
