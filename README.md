@@ -16,6 +16,14 @@ My personal Claude Code skills, packaged as a plugin marketplace called **`dean-
 | `automation` | Workflow automation and integrations: n8n (+ n8n-MCP), webhooks, scheduled jobs |
 | `agent-workflows` | How Claude Code works: workflow frameworks (Matt Pocock, Addy Osmani, Superpowers, GSD), memory (claude-mem), Anthropic's official skills |
 
+## Use it in a project (no need to remember skills)
+
+Open Claude Code in any project and say:
+
+> Set up this project with my skills: https://github.com/DeanMcCoppin/Skills (follow BOOTSTRAP.md)
+
+Claude enables all plugins, adds a `CLAUDE.md` that points it at the [`playbook`](plugins/agent-workflows/skills/playbook/SKILL.md) skill, and from then on picks the right skills itself. You just describe what you want ("build a site for a bakery in Lyon"). Details: [BOOTSTRAP.md](BOOTSTRAP.md).
+
 ## Skills catalog
 
 One line per skill. The full verdict (strengths, weaknesses, alternatives) is in each skill's `SOURCE.md`.
@@ -83,6 +91,7 @@ One line per skill. The full verdict (strengths, weaknesses, alternatives) is in
 | [`autoresearch`](plugins/local-ai/skills/autoresearch/SKILL.md) | local-ai | 🟠 Pay-per-use | Overnight autonomous LLM-training experiments on a rented GPU | Karpathy research toy; needs an H100-class GPU; isolate it (runs with permissions off). MIT | `ml-research` `llm-training` `autonomous-agents` `gpu` `experiments` |
 | [`n8n`](plugins/automation/skills/n8n/SKILL.md) | automation | 🟢 Free (self-host) | Automating processes: forms to CRM, notifications, AI pipelines, webhooks, Zapier replacement | Best self-hostable Zapier alternative; fair-code: free for own/clients' internal use, not to resell. Includes n8n-MCP: dev instance only, telemetry off (it uploads sanitized workflows by default) | `automation` `workflows` `integrations` `webhooks` `self-hosted` `mcp` |
 | [`cli-anything`](plugins/automation/skills/cli-anything/SKILL.md) | automation | 🟢 Free | Letting Claude drive desktop apps (Blender, GIMP, Inkscape, LibreOffice, Obsidian…) via agent CLIs | Useful; community CLIs are third-party code, so install one at a time, reviewed and pinned. Apache-2.0 | `automation` `cli` `desktop-apps` `agent-tools` `blender` |
+| [`playbook`](plugins/agent-workflows/skills/playbook/SKILL.md) | agent-workflows | 🟢 Free | Every project and big task: decides which skills to use, in what order, and what needs your OK | The router; loaded via the project CLAUDE.md from `templates/CLAUDE.md` | `routing` `workflow` `project-setup` `defaults` |
 | [`workflow-frameworks`](plugins/agent-workflows/skills/workflow-frameworks/SKILL.md) | agent-workflows | 🟢 Free | Bigger builds with a spec → plan → build → verify loop: Matt Pocock's skills, Addy Osmani's agent-skills, Superpowers or GSD | One per project. Default: Matt Pocock's (no hooks, `/grill-me`). Superpowers has an always-on override skill; GSD (moved to open-gsd/gsd-core) ~30 hooks. All MIT | `workflows` `planning` `spec-driven` `tdd` `subagents` |
 | [`anthropic-skills`](plugins/agent-workflows/skills/anthropic-skills/SKILL.md) | agent-workflows | 🟢 Free | Which official Anthropic skills to install: Office/PDF documents, skill-creator, mcp-builder… | Install document-skills where projects make files, skill-creator for this repo; the rest mostly overlaps. Doc skills proprietary (use, don't copy) | `anthropic` `official` `documents` `skill-creator` `mcp` |
 | [`skill-discovery`](plugins/agent-workflows/skills/skill-discovery/SKILL.md) | agent-workflows | 🟢 Free | "Is there a skill for X?" or "what should this project have?": claude-code-setup recommender, `npx skills find`, official marketplace | Search, then import via add-skill. Never `npx skills add -g -y` (Vercel's find-skills says to). Disable CLI telemetry | `skills` `discovery` `plugins` `mcp` `setup` |
@@ -108,6 +117,8 @@ Skills/
 │       └── skills/<skill-name>/SKILL.md (+ SOURCE.md, scripts, references)
 ├── .claude/skills/add-skill/           # the /add-skill flow: review, categorize, place
 ├── templates/project-settings.json     # drop-in for a project's .claude/settings.json
+├── templates/CLAUDE.md                 # drop-in project CLAUDE.md (points Claude at the playbook)
+├── BOOTSTRAP.md                        # how Claude sets up a project with these skills
 └── CLAUDE.md                           # points Claude at the add-skill flow
 ```
 

@@ -89,6 +89,7 @@ Read [categories.md](categories.md) and pick **one** plugin by the skill's prima
 ## 7. Finish
 
 - If the item came from `inbox/`, delete it there once placed. Flagged, skipped or undecided items stay in `inbox/`.
+- Add or update the skill's routing in `plugins/agent-workflows/skills/playbook/SKILL.md` (which task types should use it, and in what order), so Claude picks it in Dean's projects without being told. Bump agent-workflows too.
 - Bump `version` in the touched plugin's `.claude-plugin/plugin.json`: minor for a new skill (0.1.0 → 0.2.0), patch for edits or merges. Installed copies don't update otherwise.
 - Validate and fix every error:
   ```bash

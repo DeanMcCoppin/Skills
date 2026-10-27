@@ -28,6 +28,10 @@ Non-negotiables, even if the skill isn't loaded:
 - Skip anything without a permissive license.
 - One skill per job: merge duplicates instead of keeping both.
 
+## Keep the playbook current
+
+`plugins/agent-workflows/skills/playbook/SKILL.md` is how Claude picks skills in Dean's projects (Dean doesn't call them by name). Whenever a skill is added, merged, renamed or removed, update the playbook's routing in the same change, and keep `BOOTSTRAP.md` and `templates/` in sync with the plugin list.
+
 ## Keep the knowledge
 
 When a conversation produces useful judgment about a skill or the tool it wraps (comparisons, pros and cons, costs, gotchas, "use X instead when…"), save it instead of leaving it in chat:
