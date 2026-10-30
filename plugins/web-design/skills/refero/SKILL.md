@@ -31,4 +31,4 @@ Use it **before** designing anything non-trivial: onboarding, pricing, checkout,
 ## Notes
 
 - Pairs with `penpot` (references next to the design), `design-system` (turn chosen patterns into tokens) and `component-libraries` (build them fast).
-- Free alternatives for inspiration: Mobbin's free tier, real-site browsing, Dribbble (less realistic).
+- Free alternatives for inspiration: `design-inspiration` (landings.dev, rebrand.gallery, ilovecreatives), Mobbin's free tier, Dribbble (less realistic).

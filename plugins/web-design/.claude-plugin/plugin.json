@@ -1,7 +1,7 @@
 {
   "name": "web-design",
   "displayName": "Web Design",
-  "version": "0.10.1",
+  "version": "0.11.0",
   "description": "Skills for UI/UX, typography, layout, Tailwind, Framer Motion, interactive maps, and landing pages.",
   "author": {
     "name": "DeanMcCoppin",
@@ -20,6 +20,7 @@
     "charts",
     "penpot",
     "refero",
-    "design-research"
+    "design-research",
+    "inspiration"
   ]
 }

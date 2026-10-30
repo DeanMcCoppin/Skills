@@ -33,7 +33,7 @@ Ask in **one batch** at the start of a project, with a recommended default for e
 
 1. **Brief**: interview Dean briefly (goal, audience, pages, the one action, brand assets, budget). Use `/grill-me` *(external, Matt Pocock's skills, see `workflow-frameworks`)* if installed; otherwise ask the same questions in one batch.
 2. **Set up the project**: Next.js + Tailwind + Framer Motion per `dean-design-taste`; `context7` for current docs; `playwright-cli` so you can see what you build. Offer both setups in the start-of-project question batch.
-3. **Design direction**: `refero` (real references) → `design-md` (write the project's DESIGN.md) → for marketing sites with no brand yet, offer `design-skill-packs` → taste-skill. Premium business sites (law, agency, architect, restaurant): `editorial-themes`.
+3. **Design direction**: `design-inspiration` (landings.dev, rebrand.gallery, ilovecreatives) and `refero` (real product UI) → `design-md` (write the project's DESIGN.md) → for marketing sites with no brand yet, offer `design-skill-packs` → taste-skill. Premium business sites (law, agency, architect, restaurant): `editorial-themes`.
 4. **Build**: components from `component-libraries` (and `bencho-blocks` for tactile moments), animation with `motion` (React) or `gsap` (scroll storytelling), 3D with `spline` or `img2threejs`, charts `bklit-charts`, cinematic scroll pages `scroll-world` (pay-per-use, ask). Booking: `cal-com`. Live chat: `chatwoot`. Forms → automations: `n8n`.
 5. **Media**: images or video via `media-generation` skills (`open-higgsfield`, `fooocus`, `remotion`, `voicestudio`): ask before anything paid.
 6. **Check while building**: `playwright-cli` screenshots at 390 / 768 / 1440 after each section; `interface-polish` pass; `design-system` AI-slop check.
@@ -46,7 +46,7 @@ Same as above, plus: `workflow-frameworks` (spec → plan → build; default Mat
 
 ## Redesign or "it looks generic"
 
-`design-system` (audit and extract tokens) → `refero` → `design-md` → rebuild with step 4 above → `interface-polish` → `playwright-cli` before/after screenshots. Impeccable's detector (`design-skill-packs`) for a rules-based slop report.
+`design-system` (audit and extract tokens) → `design-inspiration` / `refero` → `design-md` → rebuild with step 4 above → `interface-polish` → `playwright-cli` before/after screenshots. Impeccable's detector (`design-skill-packs`) for a rules-based slop report.
 
 ## Existing or unfamiliar codebase
 
