@@ -1,7 +1,7 @@
 {
   "name": "agent-workflows",
   "displayName": "Agent Workflows",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Skills for how Claude Code itself works: structured workflow frameworks (Superpowers, GSD), memory across sessions, and choosing Claude Code add-ons safely.",
   "author": {
     "name": "DeanMcCoppin",
