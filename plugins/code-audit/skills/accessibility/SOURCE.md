@@ -13,3 +13,4 @@
 - Weak at / risks: automated checks only catch part of it; still needs manual screen-reader passes.
 - Alternatives: WAI-ARIA APG; Radix / React Aria docs; Deque axe.
 - Review: when re-syncing from ECC, diff against the commit above and re-apply the changes listed.
+- Most common axe failure on the SST portal (2026-11-02): `label-content-name-mismatch` (WCAG 2.5.3) on icon/short-label buttons with an `aria-label` that doesn't contain the visible text ("EN" vs "English", initials avatar). Fix: drop the aria-label, keep the visible text first and add the rest as `sr-only`.

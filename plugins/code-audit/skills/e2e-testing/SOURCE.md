@@ -13,3 +13,4 @@
 - Weak at / risks: POM can be overkill for small sites; keep tests close to user flows.
 - Alternatives: Playwright docs best practices; Cypress (not preferred).
 - Review: when re-syncing from ECC, diff against the commit above and re-apply the changes listed.
+- Gotchas from the SST portal (2026-11-02): (1) in containers without a UTF-8 locale, Chromium saves downloads with non-ASCII names as "download" even with a correct RFC 6266 header; set `launchOptions: { env: { ...process.env, LANG: "C.UTF-8", LC_ALL: "C.UTF-8" } }`. (2) Next.js's route announcer is also `role="alert"`: target `[role="alert"]:not(#__next-route-announcer__)`. (3) React 19 resets a form after a server action; wait for `toHaveValue("")` before refilling. (4) Chromium doesn't expose `<summary>` as a button. (5) `@axe-core/playwright` types clash with `@playwright/test`'s Page; cast `page as never`.
